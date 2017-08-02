@@ -1,0 +1,206 @@
+window.addEventListener('load', function () {
+    FastClick.attach(document.body);
+}, false);
+
+var ConstText = function () {
+    var t = {
+        share_text: {
+            "default": {
+                title: "南京诱诱鲜果，提供新鲜&优质水果！(支持APP、微商城、微信下单)",
+                desc: "南京诱诱鲜果，只提供最好的水果！"
+            },
+            goods: {
+                title: "南京诱诱鲜果，提供新鲜&优质水果！(支持APP、微商城、微信下单)",
+                desc: "南京诱诱鲜果，只提供最好的水果！"
+            }
+        }
+    },
+            e = {};
+    return e.C = function (e) {
+        return t[e]
+    }, e
+}();
+
+
+var MasterConfig = function() {
+		var e = {
+			rootUrl: "http://m.yymx520.com/Shop/",
+                        baseUrl: "http://m.yymx520.com/",
+                        baseMobileUrl: "http://m.yymx520.com/",	
+			oauthUrl: "https://open.weixin.qq.com/connect/oauth2/authorize?response_type=code&scope=snsapi_base&state=123&",
+			appId: "wx198663cc4ca385f1"
+		},
+			t = {};
+		return t.C = function(t) {
+			return e[t]
+		}, t
+	}();
+
+
+function getCookie(e) {
+    return document.cookie.length > 0 && (c_start = document.cookie.indexOf(e + "="), -1 != c_start) ? (c_start = c_start + e.length + 1, c_end = document.cookie.indexOf(";", c_start), -1 == c_end && (c_end = document.cookie.length), unescape(document.cookie.substring(c_start, c_end))) : ""
+}
+function setCookie(e, o, n) {
+    var t = e + "=" + o + "; ",
+            i = "";
+    null !== n && void 0 !== n && (i = "expires=" + new Date(1e3 * n) + "; "), document.cookie = t + i + "path=/"
+}
+var common = {
+    isDebug: !1,
+    checkLoginStatus: function () {
+        var myOpenId = getCookie('OpenId');
+        if(myOpenId==""){
+			var ua = navigator.userAgent.toLowerCase();
+        if (ua.match(/MicroMessenger/i) == "micromessenger") {
+			window.location.href = MasterConfig.C("rootUrl")+"WeixinApi/openidInit/"; 
+		}
+                   
+        }
+
+    },
+    _GET: function () {
+        var e = location.search,
+                o = {};
+        if ("" == e || void 0 == e)
+            return o;
+        e = e.substr(1).split("&");
+        for (var n in e) {
+            var t = e[n].split("=");
+            o[t[0]] = t[1]
+        }
+        return o.from && delete o.code, o
+    },
+    log: function () {
+        for (var e = arguments.length, o = 0; e > o; o++)
+            console.log(arguments[o])
+    },
+    alert: function (e) {
+        "" == getCookie("DevDebug") ? console.log(e) : alert(e)
+    },
+    getUsersByTime: function (e) {
+        return e.sort(sortByJoinedTime), e
+    },
+    loading: function () {
+        var e = $(window).width() <= 640 ? $(window).width() : 640,
+                o = $(window).height(),
+                n = "<iframe  class='loadinged' width='" + e + "' height='" + o + "' frameborder=0 src='" + window.location.protocol + "//" + window.location.host + "/Public/Common/html/loading.html' scrolling='no'></iframe>";
+        $("body").prepend(n), $("body").css("overflow", "hidden"), $("body").css("scroll", "no"), $("body>div").css("display", "none")
+    },
+    clearLoading: function () {
+        $("body>div").css("display", "block"), $("body iframe.loadinged").hide(), $("body").css("overflow", "visible")
+    },
+    errorTip: function () {
+        var e = '<div class="wrapper"></div><div class="box"><p>请重新刷新</p></div>';
+        $("body").prepend(e)
+    },
+    setTitle: function (e) {
+        common.log(e), $("title").text(e)
+    },
+    errorProcess: function (e) {
+        e.type;
+        switch (e.type) {
+            case "refresh":
+                doRefresh();
+                break;
+            case "alert":
+                doAlert(e.text);
+                break;
+            case "redirect":
+                doRedirect(e.text, e.url)
+        }
+    },
+    removeParamFromUrl: function (e) {
+        var o = common._GET();
+        for (var n in e)
+            delete o[e[n]];
+        return location.pathname + common.buildUrlParamString(o)
+    },
+    buildUrlParamString: function (e) {
+        var o = "";
+        for (var n in e)
+            o += n + "=" + e[n] + "&";
+        o = o.slice(0, o.length - 1);
+        var t = "" == o || void 0 == o;
+        return t ? "?" : "?" + o
+    },
+    wechatAuthorize: function () {
+        var e = MasterConfig.C("appId"),
+                o = location.origin + common.removeParamFromUrl(["from", "code", "share_id", "isappinstalled", "state", "m", "c", "a"]),
+                n = MasterConfig.C("oauthUrl");
+        location.href = n + "appid=" + e + "&redirect_uri=" + encodeURIComponent(o) + "#wechat_redirect"
+    }
+};
+$(function () {
+    common.checkLoginStatus();
+});
+
+
+
+function accDiv(arg1,arg2){
+    var t1=0,t2=0,r1,r2;
+    try{t1=arg1.toString().split(".")[1].length}catch(e){}
+    try{t2=arg2.toString().split(".")[1].length}catch(e){}
+    with(Math){
+        r1=Number(arg1.toString().replace(".",""))
+        r2=Number(arg2.toString().replace(".",""))
+        return (r1/r2)*pow(10,t2-t1);
+    }
+}
+//给Number类型增加一个div方法，调用起来更加方便。
+Number.prototype.div = function (arg){
+    return accDiv(this, arg);
+}
+
+
+//乘法函数，用来得到精确的乘法结果
+//说明：javascript的乘法结果会有误差，在两个浮点数相乘的时候会比较明显。这个函数返回较为精确的乘法结果。
+//调用：accMul(arg1,arg2)
+//返回值：arg1乘以arg2的精确结果
+
+function accMul(arg1,arg2)
+{
+    var m=0,s1=arg1.toString(),s2=arg2.toString();
+    try{m+=s1.split(".")[1].length}catch(e){}
+    try{m+=s2.split(".")[1].length}catch(e){}
+    return Number(s1.replace(".",""))*Number(s2.replace(".",""))/Math.pow(10,m)
+}
+//给Number类型增加一个mul方法，调用起来更加方便。
+Number.prototype.mul = function (arg){
+    return accMul(arg, this);
+}
+
+
+//加法函数，用来得到精确的加法结果
+//说明：javascript的加法结果会有误差，在两个浮点数相加的时候会比较明显。这个函数返回较为精确的加法结果。
+//调用：accAdd(arg1,arg2)
+//返回值：arg1加上arg2的精确结果
+
+function accAdd(arg1,arg2){
+    var r1,r2,m;
+    try{r1=arg1.toString().split(".")[1].length}catch(e){r1=0}
+    try{r2=arg2.toString().split(".")[1].length}catch(e){r2=0}
+    m=Math.pow(10,Math.max(r1,r2))
+    return (arg1*m+arg2*m)/m
+}
+//给Number类型增加一个add方法，调用起来更加方便。
+Number.prototype.add = function (arg){
+    return accAdd(arg,this);
+}
+
+//在你要用的地方包含这些函数，然后调用它来计算就可以了。
+//比如你要计算：7*0.8 ，则改成 (7).mul(8)
+//其它运算类似，就可以得到比较精确的结果。
+
+
+
+//减法函数
+function Subtr(arg1,arg2){
+    var r1,r2,m,n;
+    try{r1=arg1.toString().split(".")[1].length}catch(e){r1=0}
+    try{r2=arg2.toString().split(".")[1].length}catch(e){r2=0}
+    m=Math.pow(10,Math.max(r1,r2));
+    //last modify by deeka
+    //动态控制精度长度
+    n=(r1>=r2)?r1:r2;
+    return ((arg1*m-arg2*m)/m).toFixed(n);
+}

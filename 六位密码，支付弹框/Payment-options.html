@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="applicable-device" content="mobile" />
+    <!-- 移动端 浏览器中页面将以原始大小显示，不允许缩放 -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <!-- iphone会把一串数字识别为电话号码，点击的时候会提示是否呼叫，屏蔽这功能则把telephone设置为no -->
+    <meta content="telephone=no" name="format-detection" />
+    <!-- iphone的私有标签，默认值为default（白色），可以定为black（黑色）和black-translucent（灰色半透明） -->
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <!-- iphone设备的是有标签 允许全屏模式浏览，隐藏浏览器导航栏 -->
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <!-- 全屏显示 -->
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- 屏蔽百度转码 -->
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <title>支付方式选择</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <!-- 自定义样式 -->
+    <link rel="stylesheet" type="text/css" href="css/Payment-options.css">
+    <!-- 监听rem js 优先加载 -->
+    <style>
+    /* 支付成功消息提示框 */
+    .Payment-failed {
+        float: left;
+        min-width: 1.4rem;
+        z-index: 2000;
+        background: #000;
+        height: 1rem;
+        opacity: .7;
+        border-radius: 40px;
+        display: none;
+        text-align: center;
+        padding-left: 0.1rem;
+        padding-right: 0.1rem;
+        position: fixed;
+        left: 50%;
+        
+
+
+    }
+    
+    .Payment-failed span {
+        display: inline-block;
+        color: #fff;
+        line-height: 1rem;
+       margin-left: 3px;
+       margin-right: 3px;
+    }
+    .dialog3 .dialog__hd{
+        height: 1.5rem;
+    }
+   .dialog3 .dialog__hd .dialog__title{
+    line-height: 1.5rem;
+    padding: 0;
+    }
+    .dialog__ft2 .ipt-box-nick .ipts-box-nick .ipt-fake-box input{
+        height: 0.8rem !important;
+    }
+    </style>
+</head>
+
+<body>
+
+    <!-- 蒙板 -->
+    <div class="masking">
+    </div>
+    <!-- 头部 -->
+    <header class="head-container">
+        <p class="head-c-left">
+            <a href="javascript:;"><img src="img/back@2x.png" alt=""></a>
+        </p>
+        <h1>诱诱收银台</h1>
+    </header>
+    <!-- 待支付金额 -->
+    <div class="needPay">
+        <h1>待支付金额</h1>
+        <h2>￥<span>1335.00</span></h2>
+    </div>
+    <!-- 选择支付方式 -->
+    <div class="howPay">
+        <h2>选择支付方式</h2>
+        <!-- 余额支付 -->
+        <div class="Balance-payment">
+            <div class="payment">
+                <div class="pay-img">
+                    <img src="img/yuezhifu.png" alt="">
+                </div>
+                <div class="pay-content">
+                    <span>余额支付</span>
+                    <span>（当前余额￥<span class="balance">123333.00</span>）</span>
+                </div>
+                <div class="paySure">
+                    <img src="img/xuanzhong.png" alt="" class="yue">
+                </div>
+            </div>
+        </div>
+        <!-- 微信支付 -->
+        <div class="Balance-payment">
+            <div class="payment">
+                <div class="pay-img">
+                    <img src="img/weixin.png" alt="">
+                </div>
+                <div class="pay-content">
+                    <span>微信支付</span>
+                </div>
+                <div class="paySure">
+                    <img src="img/weixuanzhong.png" alt="" class="weixin">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 确认支付 -->
+    <a href="javascript:;" title="确认支付" class="payOk" onclick="paySubmit()">确认支付</a>
+
+    <!-- 提示框如下     -->
+    <!-- 余额不足提示框 -->
+    <div class="mask visible"></div>
+    <div class="dialog dialog--visible dialog1">
+        <div class="dialog__hd">
+            <p class="dialog__title">提示</p>
+        </div>
+        <div class="dialog__bd">
+            余额不足，立即充值
+        </div>
+        <div class="dialog__ft">
+            <a href="javascript:;" title="" class="dialog__btn_miss close">取消</a>
+            <a href="javascript:;" title="" class="dialog__btn_sure">去充值</a>
+        </div>
+    </div>
+    <!-- 余额足够；输入支付密码提示框 -->
+    <div class="dialog dialog--visible dialog2">
+
+        <div class="dialog__hd dialog__hd2">
+            <a href="javascript:;" title="" class="close">
+                <img src="img/close.png" alt="">
+            </a>
+            <p class="dialog__title">请输入支付密码</p>
+        </div>
+        <div class="dialog__bd dialog__bd2">
+            ￥<span>250.00</span>
+        </div>
+
+        <!-- 密码支付框 -->
+        <div class="dialog__ft2">
+            <div class="ipt-box-nick">
+                <input type="tel" maxlength="6" class="ipt-real-nick" outline='medium' border='none' />
+                <div class="moni"></div>
+                <div class="ipts-box-nick">
+                    <div class="ipt-fake-box">
+                        <input type="password" readonly="readonly">
+                        <input type="password" readonly="readonly">
+                        <input type="password" readonly="readonly">
+                        <input type="password" readonly="readonly">
+                        <input type="password" readonly="readonly">
+                        <input type="password" readonly="readonly">
+                    </div>
+                </div>
+            </div>
+            <div class="setPassword">
+                <a href="javascript:;" title="">设置支付密码</a>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- 离开提示框 -->
+    <div class="dialog dialog--visible dialog3">
+        <div class="dialog__hd">
+            <p class="dialog__title">是否离开？</p>
+        </div>
+        <div class="dialog__ft">
+            <a href="javascript:;" title="" class="dialog__btn_miss close">取消</a>
+            <a href="javascript:;" title="" class="dialog__btn_sure">确定</a>
+        </div>
+    </div>
+
+    
+    <!-- 支付失败的弹框 -->
+    <div class="Payment-failed">
+        <span></span>
+    </div>
+    <script type="text/javascript" src="js/common.js"></script>
+    <!-- 基于jquery库 优先加载 -->
+    <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="js/Payment-options.js"></script>
+        <script>
+
+    </script>
+</body>
+
+</html>

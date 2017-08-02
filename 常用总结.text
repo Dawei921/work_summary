@@ -1,0 +1,13 @@
+1、e.clientX: 鼠标位置距离左边界的距离
+2、div.offsetLeft: div这个块距离左边的位置
+
+
+鼠标的指令：
+onmousedown:鼠标按下
+onmousemove:随着鼠标移动
+onmouseup:松开鼠标
+
+Vue.js
+一、组件（conponent)
+
+

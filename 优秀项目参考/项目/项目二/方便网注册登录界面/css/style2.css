@@ -1,0 +1,358 @@
+.public-top{
+	height:98px;
+	border-bottom:1px solid #50aa61;
+}
+.public-top img:first-child{
+	margin-top:11px
+}
+.public-top img:nth-child(2){
+	margin-left:27px;
+	margin-top:27px;
+}
+/*注册会员*/
+.public-main .zhuce-logo{
+	height:63px;
+	line-height:63px;
+}
+.public-main .zhuce-logo span:first-child{
+	background:url(../images/icon9_1.png)no-repeat left;
+	margin-left:11px;
+	padding-left:24px;
+	font-size:17px;
+	color:black;
+	font-weight: bold;
+}
+.public-main .zhuce-logo span:nth-child(2){
+	font-size:13px;
+	color:#878484;
+	float:right;
+}
+.public-main .information{
+	border:1px solid #ccc;
+	height:844px;
+}
+.public-main .information3{
+	border:1px solid #ccc;
+	height:700px;
+}
+.public-main .information .progress{
+	height:41px;
+	display:flex;
+	line-height:41px;
+	background:url(../images/back1.jpg) repeat-x ;
+}
+.public-main .information .progress p:first-child{
+	width:390px;
+	font-size:15px;
+	color:#9f9f9e;
+	margin-left:35px;
+}
+.public-main .information .progress p:nth-child(2){
+	width:485px;
+	font-size:15px;
+	color:#9f9f9e;
+}
+.public-main .information .progress p:nth-child(3){
+	font-size:15px;
+	color:#9f9f9e;
+}
+.public-main .information .progress-img img:first-child{
+	margin-left:56px;
+	float:left;
+}
+.public-main .information .progress-img img:nth-child(2){
+	float:left;
+}
+.public-main .information .yanzheng{
+	height:716px;
+	background-color:#ffffff;
+}
+.public-main .information .yanzheng .message{
+	display:flex;
+	margin-top:53px;
+	margin-bottom: 20px;
+}
+.public-main .information .yanzheng .message .left{
+	width:778px;
+	
+}
+.public-main .information .yanzheng .message .left .left-top{
+	height:179px;
+}
+.public-main .information .yanzheng .message .left .left-top .dash{
+	height:39px;
+	width:749px;
+	margin-left:22px;
+	border-bottom:1px dashed #e2e2e2;
+}
+	
+.public-main .information .yanzheng .message .left .left-top p:first-child{
+	margin-left:115px;
+	height:33px;
+	line-height:33px;
+	font-size:15px;
+	color:black;
+}
+.public-main .information .yanzheng .message .left .left-top p:first-child span{
+	color:#ffa323;
+}
+.public-main .information .yanzheng .message .left .left-top p:nth-child(2){
+	margin-left:63px;
+	font-size:15px;
+	color:black;
+	margin-right:13px;
+	
+}
+.public-main .information .yanzheng .message .left .left-top p:nth-child(2) input{
+	border:2px solid #dadada;
+	width:160px;
+	height:30px;
+	margin-left:11px;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+.public-main .information .yanzheng .message .left .left-top .checksubmit{
+	width:160px;
+	height:33px;
+	background:#ff9000;
+	color:white;
+	font-size:17px;
+	text-align:center;
+	line-height:33px;
+	border-radius:6px;
+	margin-left:115px;
+}
+.public-main .information .yanzheng .message .left .left-bottom{
+	margin-left: 115px;
+	margin-top: 51px;
+}
+.public-main .information .yanzheng .message .left .left-bottom button{
+	margin-top: 32px;
+	width: 128px;
+	height: 30px;
+	background: #f2f2f2;
+	border: 1px solid #cfcfcf;
+	border-radius: 3px;
+	text-align: center;
+	line-height: 30px;
+	font-size: 12px;
+	color:#333333;
+}
+.public-main .information .yanzheng .message .right{
+	width:198px;
+	height:392px;
+	border:1px solid #dcdcdc;
+	text-align: center;
+}
+.public-main .information .yanzheng .message .right img:first-child{
+	margin-top: 26px;
+	margin-bottom: 28px;
+}
+.public-main .information .yanzheng .message .right img:nth-child(2){
+	margin-bottom: 22px;
+}
+.public-main .information .yanzheng .problem{
+	width: 958px;
+	height: 281px;
+	margin: 0 auto;
+}
+/* 界面3的恭喜您已经成功注册提示 */
+.public-main .information .zhuce-success{
+	margin-left: 310px;
+	margin-bottom: 86px;
+}
+.public-main .information .zhuce-success p{
+	display: inline-block;
+	margin-top: 104px;
+	margin-right: 20px;
+}
+.public-main .information .zhuce-success p:nth-child(2)>span{
+	display: block;
+	font-size: 15px;
+	color: black;
+	height: 32;
+	line-height: 32px;
+}
+.public-main .information .zhuce-success p:nth-child(2)>span>span{
+	color: orange;
+}
+.public-main .information .zhuce-success p:nth-child(3)>input{
+	width: 120px;
+	height: 32px;
+	background: orange;
+	border-radius: 5px;
+	color: white;
+}
+.public-main .information .erweima{
+	width: 200px;
+	height: 213px;
+	text-align: center;
+	margin: 0 auto;
+	border: 1px solid #dcdcdc;
+
+}
+.public-main .information .erweima img:first-child{
+	margin-top: 27px;
+	margin-bottom: 9px;
+}
+/* 底部注释 */
+.public-bottom{
+	margin-top: 63px;
+	height: 167px;
+}
+.public-bottom .last{
+	border-top: 2px solid #e8e8e8;
+}
+.public-bottom div:first-child{
+	display: flex;
+	font-size: 15px;
+	justify-content: space-around ;
+	width: 590px;
+	margin: 0 auto;
+	height: 43px;
+	line-height: 43px;
+
+}
+.public-bottom div:first-child p{
+	text-align: center;
+	width: 118px;
+	color: #666666;
+	font-weight: bold;
+	background: url(../images/rightxian.jpg) no-repeat right;
+}
+.public-bottom .last {
+	text-align: center;
+
+}
+.public-bottom .last p{
+	margin-top: 21px;
+}
+
+/* 登录的登录界面 */
+body{
+	position: relative;
+}
+.touming{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color:rgba(178,178,178,0.4);
+	
+}
+.denglu{
+	width: 360px;
+	height: 380px;
+	background: #ffffff;
+	position: absolute;
+	top: 30%;
+	left: 40%;
+	border-radius: 5px;
+	z-index: 999;
+}
+.denglutag{
+	background: url(../images/back1.jpg) repeat-x;
+	height: 53px;
+	display: flex;
+	border-bottom: 1px solid #5cb06c;
+}
+.denglutag span{
+	display: inline-block;
+	width: 180px;
+	text-align: center;
+	line-height: 53px;
+}
+.denglutag span:first-child{
+	font-size: 17px;
+	color:#49a75b ;
+}
+.denglutag span:last-child{
+	color:#a2a19d;
+	font-size: 16px;
+}
+.denglutag span:hover{
+	border-bottom: 3px solid #49a75b;
+}
+.denglu .xinxi .shoujihao,.mima{
+	width: 300px;
+	height: 40px;
+	border: 1px solid #e0e0e0;
+	border-radius: 4px;
+	margin-top: 26px;
+	margin-left: 30px;
+	text-indent: 16px;
+}
+.fuxuan{
+	margin-top: 14px;
+	margin-left: 30px;
+	margin-right: 7px;
+}
+.fx span{
+	float: right;
+	margin-top: 14px;
+	margin-right: 33px;
+	color: #2da1ea;
+}
+.denglu-button{
+	margin-left: 30px;
+	width: 300px;
+	height: 30px;
+	background: #49a75b;
+	border: 1px solid #94cb9f;
+	border-radius: 5px;
+	margin-top: 23px;
+	color: white;
+	font-size: 17px;
+}
+.shifohy{
+	margin: 0 auto;
+	width: 340px;
+	height: 48px;
+	background: #f7fbf5;
+	margin-top: 22px;
+	line-height: 48px;
+	margin-left: 14px;
+}
+.shifohy span{
+	color: #2ea1e7;
+}
+/* 手机登录 */
+#yz34,.shoujiyzm{
+	width: 122px;
+	height: 40px;
+	border: 1px solid #e0e0e0;
+	margin-left: 30px;
+	margin-top: 20px;
+	border-radius: 4px;
+}
+.getyzm{
+	width: 98px;
+	height: 24px;
+	background: white;
+	border: 1px solid #f0f0f0;
+	margin-left: 30px;
+	margin-top: 20px;
+	border-radius: 4px;
+	font-size: 11px;
+}
+.addyanshidenglu{
+	color:orangered;
+}
+
+/* 跳转页 */
+.tiaozhuanye{
+	position: absolute;
+	width: 352px;
+	height: 100px;
+	background: orange;
+	border: 1px solid red;
+	border-radius: 30px;
+	text-align: center;
+	line-height: 100px;
+	font-size: 25px;
+	color: white;
+	top: 44%;
+	left: 35%;
+	
+}
+
+

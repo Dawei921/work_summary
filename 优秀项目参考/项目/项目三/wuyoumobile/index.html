@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="applicable-device" content="mobile" />
+		<!-- 移动端 浏览器中页面将以原始大小显示，不允许缩放 -->
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+
+		<!-- iphone会把一串数字识别为电话号码，点击的时候会提示是否呼叫，屏蔽这功能则把telephone设置为no -->
+		<meta content="telephone=no" name="format-detection" />
+		<!-- iphone的私有标签，默认值为default（白色），可以定为black（黑色）和black-translucent（灰色半透明） -->
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<!-- iphone设备的是有标签 允许全屏模式浏览，隐藏浏览器导航栏 -->
+
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<!-- 全屏显示 -->
+		<meta content="yes" name="apple-touch-fullscreen" />
+		<!-- UC强制全屏 -->
+		<meta name="full-screen" content="yes">
+		<!-- QQ强制全屏 -->
+		<meta name="x5-fullscreen" content="true">
+		<!-- 屏蔽百度转码 -->
+		<meta http-equiv="Cache-Control" content="no-transform" />
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<title>名校无忧 营销手机端</title>
+
+		<link rel="stylesheet" type="text/css" href="css/common.css">
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+
+		<link rel="stylesheet" href="css/icon-font/demo.css">
+		<link rel="stylesheet" type="text/css" href="css/icon-font/iconfont.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<!-- 监听rem js 优先加载 -->
+		<script type="text/javascript" src="js/common.js"></script>
+		<!-- 基于jquery库 优先加载 -->
+		<script type="text/javascript" src="js/jquery-1.9.0.js"></script>
+		<!-- 基于jquery库的js 次加载 -->
+		<script type="text/javascript" src="js/swiper.min.js"></script>
+		<!-- 外部引用 自定义js-->
+		<script type="text/javascript" src="js/js.js"></script>
+	</head>
+
+	<body>
+		<!--右侧边栏-->
+		<section class="slide_right">
+			<ul>
+				<li>群体</li>
+				<li>国家</li>
+				<li>方案</li>
+				<li>服务</li>
+			</ul>
+		</section>
+		<!--左侧边栏-->
+		<section class="slide_left">
+			<header>
+				<!--名校无忧-->
+				<section class="menum">
+					<section class="menum-left">
+						<img src="images/logo.png" alt="" class="" />
+					</section>
+					<section class="menum-right">
+						<img src="images/ico_btn1.png" alt="" />
+						<img src="images/ico_btn2_hov.png" id="doclick">
+					</section>
+				</section>
+				<!--轮播图-->
+				<section class=" banner ">
+					<section class="swiper-container ">
+						<section class="swiper-wrapper ">
+							<section class="swiper-slide ">
+								<img src="images/banner.jpg " alt=" " />
+							</section>
+							<section class="swiper-slide ">
+								<img src="images/banner.jpg " alt=" " />
+							</section>
+							<section class="swiper-slide ">
+								<img src="images/banner.jpg " alt=" " />
+							</section>
+						</section>
+
+						<section class="swiper-pagination "></section>
+						<!-- Add Arrows -->
+						<!--<section class="swiper-button-next "></section>
+					<section class="swiper-button-prev "></section>-->
+					</section>
+				</section>
+
+			</header>
+			<!--nav部分-->
+			<nav class="navone">
+				<section>
+					<p><img src="images/ico_btn3.png " alt=" " /></p>
+					<span>选国家</span>
+				</section>
+				<section>
+					<p><img src="images/ico_btn4.png " alt=" " /></p>
+					<span>挑大学</span>
+				</section>
+				<section>
+					<p><img src="images/ico_btn5.png " alt=" " /></p>
+					<span>找方案</span>
+				</section>
+				<section>
+					<p><img src="images/ico_btn6.png " alt=" " /></p>
+					<span>查排名</span>
+				</section>
+				<section>
+					<p><img src="images/ico_btn7.png " alt=" " /></p>
+					<span>测录取</span>
+				</section>
+			</nav>
+			<!--留学头条-->
+			<section class="toutiao  headnews">
+				<p><img src="images/text_btn1.png " alt=" " /></p>
+				<ul class="headnews_up">
+					<li class="one">
+						<a href=" ">美国纽约大学金融数学硕士专业的申请</a>
+					</li>
+					<li class="two">
+						<a href=" ">美国纽约大学金融数学硕士专业的申请</a>
+					</li >
+					<li class="three">
+						<a href=" ">美国纽约大学金融数学硕士专业的申请</a>
+					</li>
+					<li class="four">
+						<a href=" ">美国纽约大学金融数学硕士专业的申请</a>
+					</li>
+				</ul>
+			</section>
+			<!--我是高中生-->
+			<section class="nianji ">
+				<section class="nianji-top ">
+					<section>
+						<p>我是高中生</p>
+						<p>放眼全球报志愿</p>
+						<p>成就更优秀的自己</p>
+					</section>
+					<section class="nianjidaxue ">
+						<p>我是大学生</p>
+						<p>名校硕士留学</p>
+						<p>无缝对接世界名校</p>
+					</section>
+					<section class="nianjichuzhong ">
+						<p>我是初中生</p>
+						<p>无户籍限制</p>
+						<p>更好教育更高起点</p>
+					</section>
+				</section>
+				<section class="nianji-kaoshi ">
+					<section>
+						<p>高考留学正当时</p>
+						<p>高考0压力 拒绝独木桥</p>
+					</section>
+					<section>
+						<p>中外名校双录取</p>
+						<p>录取先人一步 留学更有保障</p>
+					</section>
+				</section>
+			</section>
+			<!--留学目的地-->
+			<nav class="liuxue ">
+				<section class="liuxue-dizhi ">留学目的地</section>
+				<section>
+					<a href=" ">在线咨询</a>
+				</section>
+			</nav>
+			<section class="liuxue-banner ">
+				<section class="swiper-container ">
+					<section class="swiper-wrapper ">
+						<section class="swiper-slide ">
+							<section class="mudidi-banner ">
+								<section class="mudidi-banner-top ">
+									<ul>
+										<li><img src="images/national-1.png " alt=" " />
+											<p>
+												<a href=" ">美国</a>
+											</p>
+										</li>
+										<li><img src="images/national-2.png " alt=" " />
+											<p>
+												<a href=" ">英国</a>
+											</p>
+										</li>
+										<li><img src="images/national-3.png " alt=" " />
+											<p>
+												<a href=" ">澳洲</a>
+											</p>
+										</li>
+										<li><img src="images/national-4.png " alt=" " />
+											<p>
+												<a href=" ">加拿大</a>
+											</p>
+										</li>
+									</ul>
+								</section>
+								<section class="mudidi-banner-bottom ">
+									<ul>
+										<li><img src="images/national-5.png " alt=" " />
+											<p>
+												<a href=" ">韩国</a>
+											</p>
+										</li>
+										<li><img src="images/national-6.png " alt=" " />
+											<p>
+												<a href=" ">德国</a>
+											</p>
+										</li>
+										<li><img src="images/national-7.png " alt=" " />
+											<p>
+												<a href=" ">法国</a>
+											</p>
+										</li>
+										<li><img src="images/national-8.png " alt=" " />
+											<p>
+												<a href=" ">西班牙</a>
+											</p>
+										</li>
+									</ul>
+								</section>
+							</section>
+						</section>
+						<section class="swiper-slide ">
+							<section class="mudidi-banner ">
+								<section class="mudidi-banner-top ">
+									<ul>
+										<li><img src="images/national-1.png " alt=" " />
+											<p>
+												<a href=" ">美国</a>
+											</p>
+										</li>
+										<li><img src="images/national-2.png " alt=" " />
+											<p>
+												<a href=" ">英国</a>
+											</p>
+										</li>
+										<li><img src="images/national-3.png " alt=" " />
+											<p>
+												<a href=" ">澳洲</a>
+											</p>
+										</li>
+										<li><img src="images/national-4.png " alt=" " />
+											<p>
+												<a href=" ">加拿大</a>
+											</p>
+										</li>
+									</ul>
+								</section>
+								<section class="mudidi-banner-bottom ">
+									<ul>
+										<li><img src="images/national-5.png " alt=" " />
+											<p>
+												<a href=" ">韩国</a>
+											</p>
+										</li>
+										<li><img src="images/national-6.png " alt=" " />
+											<p>
+												<a href=" ">德国</a>
+											</p>
+										</li>
+										<li><img src="images/national-7.png " alt=" " />
+											<p>
+												<a href=" ">法国</a>
+											</p>
+										</li>
+										<li><img src="images/national-8.png " alt=" " />
+											<p>
+												<a href=" ">西班牙</a>
+											</p>
+										</li>
+									</ul>
+								</section>
+							</section>
+						</section>
+
+					</section>
+
+					<section class="swiper-pagination page "></section>
+
+				</section>
+			</section>
+			<!--热门留学院校-->
+			<section class=rmyuanxiao>
+				<header class="remengyuanxiao ">
+					<section class="remengyuanxiao ">热门留学院校</section>
+					<section>
+						<a href=" ">择校咨询</a>
+					</section>
+				</header>
+				<nav class="too">
+					<ul class="chosediqu ">
+						<li class="on">北京地区</li>
+						<li>华东地区</li>
+						<li>华南地区</li>
+						<li>西南地区</li>
+						<li>东北地区</li>
+					</ul>
+				</nav>
+				<section class="foo">
+					<section class="slide">
+						<section class="baoming ">
+							<!--<label for="baominglianjie ">-->
+							<section class="baoming-left ">
+								<p><span class="hot ">热</span><span class="qinghua "><a href=" " id="baominglianjie ">清华大学加拿大留学班</a></span><span class="baomingzhong ">报名中</span></p>
+								<p>美国／日本／加拿大／英国／韩国／加拿大／英国／韩国／...</p>
+							</section>
+							<section class="baoming-right ">
+								<a href=" " ><img src="images/ico_btn10.png " alt=" " /></a>
+							</section>
+						<!--	</label>-->
+						</section>
+						<section class="baoming ">
+							<!--<label for="baominglianjie ">-->
+							<section class="baoming-left ">
+								<p><span class="hot ">热</span><span class="qinghua "><a href=" " id="baominglianjie ">清华大学加拿大留学班</a></span><span class="baomingzhong ">报名中</span></p>
+								<p>美国／日本／加拿大／英国／韩国／加拿大／英国／韩国／...</p>
+							</section>
+							<section class="baoming-right ">
+								<a href=" " ><img src="images/ico_btn10.png " alt=" " /></a>
+							</section>
+						<!--	</label>-->
+						</section>
+						<section class="baoming ">
+							<!--<label for="baominglianjie ">-->
+							<section class="baoming-left ">
+								<p><span class="hot ">热</span><span class="qinghua "><a href=" " id="baominglianjie ">清华大学加拿大留学班</a></span><span class="baomingzhong ">报名中</span></p>
+								<p>美国／日本／加拿大／英国／韩国／加拿大／英国／韩国／...</p>
+							</section>
+							<section class="baoming-right ">
+								<a href=" " ><img src="images/ico_btn10.png " alt=" " /></a>
+							</section>
+						<!--	</label>-->
+						</section>
+						<section class="baoming ">
+							<!--<label for="baominglianjie ">-->
+							<section class="baoming-left ">
+								<p><span class="hot ">热</span><span class="qinghua "><a href=" " id="baominglianjie ">清华大学加拿大留学班</a></span><span class="baomingzhong ">报名中</span></p>
+								<p>美国／日本／加拿大／英国／韩国／加拿大／英国／韩国／...</p>
+							</section>
+							<section class="baoming-right ">
+								<a href=" " ><img src="images/ico_btn10.png " alt=" " /></a>
+							</section>
+						<!--	</label>-->
+						</section>
+						<section class="baoming ">
+						<!--<label for="baominglianjie ">-->
+						<section class="baoming-left ">
+							<p><span class="hot ">热</span><span class="qinghua "><a href=" " id="baominglianjie ">清华大学加拿大留学班</a></span><span class="baomingzhong ">报名中</span></p>
+							<p>美国／日本／加拿大／英国／韩国／加拿大／英国／韩国／...</p>
+						</section>
+						<section class="baoming-right ">
+							<a href=" " ><img src="images/ico_btn10.png " alt=" " /></a>
+						</section>
+					<!--	</label>-->
+					</section>
+					</section>
+					<section class="slide">
+						<section class="baoming ">
+							<!--<label for="baominglianjie ">-->
+							<section class="baoming-left ">
+								<p><span class="hot ">热</span><span class="qinghua "><a href=" " id="baominglianjie ">南京大学加拿大留学班</a></span><span class="baomingzhong ">报名中</span></p>
+								<p>美国／日本／加拿大／英国／韩国／加拿大／英国／韩国／...</p>
+							</section>
+							<section class="baoming-right ">
+								<a href=" " ><img src="images/ico_btn10.png " alt=" " /></a>
+							</section>
+						<!--	</label>-->
+						</section>
+						<section class="baoming ">
+							<!--<label for="baominglianjie ">-->
+							<section class="baoming-left ">
+								<p><span class="hot ">热</span><span class="qinghua "><a href=" " id="baominglianjie ">南京大学加拿大留学班</a></span><span class="baomingzhong ">报名中</span></p>
+								<p>美国／日本／加拿大／英国／韩国／加拿大／英国／韩国／...</p>
+							</section>
+							<section class="baoming-right ">
+								<a href=" " ><img src="images/ico_btn10.png " alt=" " /></a>
+							</section>
+						<!--	</label>-->
+						</section>
+						<section class="baoming ">
+							<!--<label for="baominglianjie ">-->
+							<section class="baoming-left ">
+								<p><span class="hot ">热</span><span class="qinghua "><a href=" " id="baominglianjie ">南京大学加拿大留学班</a></span><span class="baomingzhong ">报名中</span></p>
+								<p>美国／日本／加拿大／英国／韩国／加拿大／英国／韩国／...</p>
+							</section>
+							<section class="baoming-right ">
+								<a href=" " ><img src="images/ico_btn10.png " alt=" " /></a>
+							</section>
+						<!--	</label>-->
+						</section>
+						<section class="baoming ">
+							<!--<label for="baominglianjie ">-->
+							<section class="baoming-left ">
+								<p><span class="hot ">热</span><span class="qinghua "><a href=" " id="baominglianjie ">南京大学加拿大留学班</a></span><span class="baomingzhong ">报名中</span></p>
+								<p>美国／日本／加拿大／英国／韩国／加拿大／英国／韩国／...</p>
+							</section>
+							<section class="baoming-right ">
+								<a href=" " ><img src="images/ico_btn10.png " alt=" " /></a>
+							</section>
+						<!--	</label>-->
+						</section>
+						<section class="baoming ">
+						<!--<label for="baominglianjie ">-->
+						<section class="baoming-left ">
+							<p><span class="hot ">热</span><span class="qinghua "><a href=" " id="baominglianjie ">南京大学加拿大留学班</a></span><span class="baomingzhong ">报名中</span></p>
+							<p>美国／日本／加拿大／英国／韩国／加拿大／英国／韩国／...</p>
+						</section>
+						<section class="baoming-right ">
+							<a href=" " ><img src="images/ico_btn10.png " alt=" " /></a>
+						</section>
+					<!--	</label>-->
+					</section>
+					</section>
+					<section class="slide">
+						<section class="baoming ">
+							<!--<label for="baominglianjie ">-->
+							<section class="baoming-left ">
+								<p><span class="hot ">热</span><span class="qinghua "><a href=" " id="baominglianjie ">北京大学加拿大留学班</a></span><span class="baomingzhong ">报名中</span></p>
+								<p>美国／日本／加拿大／英国／韩国／加拿大／英国／韩国／...</p>
+							</section>
+							<section class="baoming-right ">
+								<a href=" " ><img src="images/ico_btn10.png " alt=" " /></a>
+							</section>
+						<!--	</label>-->
+						</section>
+						<section class="baoming ">
+							<!--<label for="baominglianjie ">-->
+							<section class="baoming-left ">
+								<p><span class="hot ">热</span><span class="qinghua "><a href=" " id="baominglianjie ">北京大学加拿大留学班</a></span><span class="baomingzhong ">报名中</span></p>
+								<p>美国／日本／加拿大／英国／韩国／加拿大／英国／韩国／...</p>
+							</section>
+							<section class="baoming-right ">
+								<a href=" " ><img src="images/ico_btn10.png " alt=" " /></a>
+							</section>
+						<!--	</label>-->
+						</section>
+						<section class="baoming ">
+							<!--<label for="baominglianjie ">-->
+							<section class="baoming-left ">
+								<p><span class="hot ">热</span><span class="qinghua "><a href=" " id="baominglianjie ">北京大学加拿大留学班</a></span><span class="baomingzhong ">报名中</span></p>
+								<p>美国／日本／加拿大／英国／韩国／加拿大／英国／韩国／...</p>
+							</section>
+							<section class="baoming-right ">
+								<a href=" " ><img src="images/ico_btn10.png " alt=" " /></a>
+							</section>
+						<!--	</label>-->
+						</section>
+						<section class="baoming ">
+							<!--<label for="baominglianjie ">-->
+							<section class="baoming-left ">
+								<p><span class="hot ">热</span><span class="qinghua "><a href=" " id="baominglianjie ">北京大学加拿大留学班</a></span><span class="baomingzhong ">报名中</span></p>
+								<p>美国／日本／加拿大／英国／韩国／加拿大／英国／韩国／...</p>
+							</section>
+							<section class="baoming-right ">
+								<a href=" " ><img src="images/ico_btn10.png " alt=" " /></a>
+							</section>
+						<!--	</label>-->
+						</section>
+						<section class="baoming ">
+						<!--<label for="baominglianjie ">-->
+						<section class="baoming-left ">
+							<p><span class="hot ">热</span><span class="qinghua "><a href=" " id="baominglianjie ">北京大学加拿大留学班</a></span><span class="baomingzhong ">报名中</span></p>
+							<p>美国／日本／加拿大／英国／韩国／加拿大／英国／韩国／...</p>
+						</section>
+						<section class="baoming-right ">
+							<a href=" " ><img src="images/ico_btn10.png " alt=" " /></a>
+						</section>
+					<!--	</label>-->
+					</section>
+					</section>
+					<section class="slide">
+						<section class="baoming ">
+							<!--<label for="baominglianjie ">-->
+							<section class="baoming-left ">
+								<p><span class="hot ">热</span><span class="qinghua "><a href=" " id="baominglianjie ">人民大学加拿大留学班</a></span><span class="baomingzhong ">报名中</span></p>
+								<p>美国／日本／加拿大／英国／韩国／加拿大／英国／韩国／...</p>
+							</section>
+							<section class="baoming-right ">
+								<a href=" " ><img src="images/ico_btn10.png " alt=" " /></a>
+							</section>
+						<!--	</label>-->
+						</section>
+						<section class="baoming ">
+							<!--<label for="baominglianjie ">-->
+							<section class="baoming-left ">
+								<p><span class="hot ">热</span><span class="qinghua "><a href=" " id="baominglianjie ">人民大学加拿大留学班</a></span><span class="baomingzhong ">报名中</span></p>
+								<p>美国／日本／加拿大／英国／韩国／加拿大／英国／韩国／...</p>
+							</section>
+							<section class="baoming-right ">
+								<a href=" " ><img src="images/ico_btn10.png " alt=" " /></a>
+							</section>
+						<!--	</label>-->
+						</section>
+						<section class="baoming ">
+							<!--<label for="baominglianjie ">-->
+							<section class="baoming-left ">
+								<p><span class="hot ">热</span><span class="qinghua "><a href=" " id="baominglianjie ">人民大学加拿大留学班</a></span><span class="baomingzhong ">报名中</span></p>
+								<p>美国／日本／加拿大／英国／韩国／加拿大／英国／韩国／...</p>
+							</section>
+							<section class="baoming-right ">
+								<a href=" " ><img src="images/ico_btn10.png " alt=" " /></a>
+							</section>
+						<!--	</label>-->
+						</section>
+						<section class="baoming ">
+							<!--<label for="baominglianjie ">-->
+							<section class="baoming-left ">
+								<p><span class="hot ">热</span><span class="qinghua "><a href=" " id="baominglianjie ">人民大学加拿大留学班</a></span><span class="baomingzhong ">报名中</span></p>
+								<p>美国／日本／加拿大／英国／韩国／加拿大／英国／韩国／...</p>
+							</section>
+							<section class="baoming-right ">
+								<a href=" " ><img src="images/ico_btn10.png " alt=" " /></a>
+							</section>
+						<!--	</label>-->
+						</section>
+						<section class="baoming ">
+						<!--<label for="baominglianjie ">-->
+						<section class="baoming-left ">
+							<p><span class="hot ">热</span><span class="qinghua "><a href=" " id="baominglianjie ">人民大学加拿大留学班</a></span><span class="baomingzhong ">报名中</span></p>
+							<p>美国／日本／加拿大／英国／韩国／加拿大／英国／韩国／...</p>
+						</section>
+						<section class="baoming-right ">
+							<a href=" " ><img src="images/ico_btn10.png " alt=" " /></a>
+						</section>
+					<!--	</label>-->
+					</section>
+					</section>
+					<section class="slide">
+						<section class="baoming ">
+							<!--<label for="baominglianjie ">-->
+							<section class="baoming-left ">
+								<p><span class="hot ">热</span><span class="qinghua "><a href=" " id="baominglianjie ">东南大学加拿大留学班</a></span><span class="baomingzhong ">报名中</span></p>
+								<p>美国／日本／加拿大／英国／韩国／加拿大／英国／韩国／...</p>
+							</section>
+							<section class="baoming-right ">
+								<a href=" " ><img src="images/ico_btn10.png " alt=" " /></a>
+							</section>
+						<!--	</label>-->
+						</section>
+						<section class="baoming ">
+							<!--<label for="baominglianjie ">-->
+							<section class="baoming-left ">
+								<p><span class="hot ">热</span><span class="qinghua "><a href=" " id="baominglianjie ">东南大学加拿大留学班</a></span><span class="baomingzhong ">报名中</span></p>
+								<p>美国／日本／加拿大／英国／韩国／加拿大／英国／韩国／...</p>
+							</section>
+							<section class="baoming-right ">
+								<a href=" " ><img src="images/ico_btn10.png " alt=" " /></a>
+							</section>
+						<!--	</label>-->
+						</section>
+						<section class="baoming ">
+							<!--<label for="baominglianjie ">-->
+							<section class="baoming-left ">
+								<p><span class="hot ">热</span><span class="qinghua "><a href=" " id="baominglianjie ">东南大学加拿大留学班</a></span><span class="baomingzhong ">报名中</span></p>
+								<p>美国／日本／加拿大／英国／韩国／加拿大／英国／韩国／...</p>
+							</section>
+							<section class="baoming-right ">
+								<a href=" " ><img src="images/ico_btn10.png " alt=" " /></a>
+							</section>
+						<!--	</label>-->
+						</section>
+						<section class="baoming ">
+							<!--<label for="baominglianjie ">-->
+							<section class="baoming-left ">
+								<p><span class="hot ">热</span><span class="qinghua "><a href=" " id="baominglianjie ">东南大学加拿大留学班</a></span><span class="baomingzhong ">报名中</span></p>
+								<p>美国／日本／加拿大／英国／韩国／加拿大／英国／韩国／...</p>
+							</section>
+							<section class="baoming-right ">
+								<a href=" " ><img src="images/ico_btn10.png " alt=" " /></a>
+							</section>
+						<!--	</label>-->
+						</section>
+						<section class="baoming ">
+						<!--<label for="baominglianjie ">-->
+						<section class="baoming-left ">
+							<p><span class="hot ">热</span><span class="qinghua "><a href=" " id="baominglianjie ">东南大学加拿大留学班</a></span><span class="baomingzhong ">报名中</span></p>
+							<p>美国／日本／加拿大／英国／韩国／加拿大／英国／韩国／...</p>
+						</section>
+						<section class="baoming-right ">
+							<a href=" " ><img src="images/ico_btn10.png " alt=" " /></a>
+						</section>
+					<!--	</label>-->
+					</section>
+					</section>
+					<section class="slide">
+						<section class="baoming ">
+							<!--<label for="baominglianjie ">-->
+							<section class="baoming-left ">
+								<p><span class="hot ">热</span><span class="qinghua "><a href=" " id="baominglianjie ">人民大学加拿大留学班</a></span><span class="baomingzhong ">报名中</span></p>
+								<p>美国／日本／加拿大／英国／韩国／加拿大／英国／韩国／...</p>
+							</section>
+							<section class="baoming-right ">
+								<a href=" " ><img src="images/ico_btn10.png " alt=" " /></a>
+							</section>
+						<!--	</label>-->
+						</section>
+						<section class="baoming ">
+							<!--<label for="baominglianjie ">-->
+							<section class="baoming-left ">
+								<p><span class="hot ">热</span><span class="qinghua "><a href=" " id="baominglianjie ">人民大学加拿大留学班</a></span><span class="baomingzhong ">报名中</span></p>
+								<p>美国／日本／加拿大／英国／韩国／加拿大／英国／韩国／...</p>
+							</section>
+							<section class="baoming-right ">
+								<a href=" " ><img src="images/ico_btn10.png " alt=" " /></a>
+							</section>
+						<!--	</label>-->
+						</section>
+						<section class="baoming ">
+							<!--<label for="baominglianjie ">-->
+							<section class="baoming-left ">
+								<p><span class="hot ">热</span><span class="qinghua "><a href=" " id="baominglianjie ">人民大学加拿大留学班</a></span><span class="baomingzhong ">报名中</span></p>
+								<p>美国／日本／加拿大／英国／韩国／加拿大／英国／韩国／...</p>
+							</section>
+							<section class="baoming-right ">
+								<a href=" " ><img src="images/ico_btn10.png " alt=" " /></a>
+							</section>
+						<!--	</label>-->
+						</section>
+						<section class="baoming ">
+							<!--<label for="baominglianjie ">-->
+							<section class="baoming-left ">
+								<p><span class="hot ">热</span><span class="qinghua "><a href=" " id="baominglianjie ">人民大学加拿大留学班</a></span><span class="baomingzhong ">报名中</span></p>
+								<p>美国／日本／加拿大／英国／韩国／加拿大／英国／韩国／...</p>
+							</section>
+							<section class="baoming-right ">
+								<a href=" " ><img src="images/ico_btn10.png " alt=" " /></a>
+							</section>
+						<!--	</label>-->
+						</section>
+						<section class="baoming ">
+						<!--<label for="baominglianjie ">-->
+						<section class="baoming-left ">
+							<p><span class="hot ">热</span><span class="qinghua "><a href=" " id="baominglianjie ">人民大学加拿大留学班</a></span><span class="baomingzhong ">报名中</span></p>
+							<p>美国／日本／加拿大／英国／韩国／加拿大／英国／韩国／...</p>
+						</section>
+						<section class="baoming-right ">
+							<a href=" " ><img src="images/ico_btn10.png " alt=" " /></a>
+						</section>
+					<!--	</label>-->
+						</section>
+					</section>
+					
+				</section>
+			</section>
+			<!--加载更多-->
+			<section class="moreinformation">
+				<button id="moremessage">点击加载更多</button>
+			</section>
+			<!--智能选校-->
+			<section class="zhinengxuanxiao ">
+					<section>
+						<p class="zhinengxuanxiao-left "><img src="images/ico_btn11.png " alt=" " /></p>
+						<section class="zhinengxuanxiao-right ">
+							<p>智能选校</p>
+							<p>打造最佳留学方案</p>
+						</section>
+					</section>
+					<section>
+						<p class="zhinengxuanxiao-two "><img src="images/ico_btn12.png " alt=" " /></p>
+						<section class="zhinengxuanxiao-botton ">
+							<p>竞争力测试</p>
+							<p>完美超越别人家孩子</p>
+						</section>
+					</section>
+			</section>
+			<!--优选留学方案-->
+			<section class="youxuanliuxue ">
+				<p>优选留学方案</p>
+				<p id="open"><img src="images/xiala_icon1.png " alt=" " /></p>
+			</section>
+			<!--优选留学方案内容-->
+			<section class="youxuanliuxuexuanxiang">
+				<ul>
+					<li><span>优</span>双录取留学</li>
+					<li><span>优</span>双录取留学</li>
+					<li><span>优</span>双录取留学</li>
+					<li><span>优</span>双录取留学</li>
+					<li><span>优</span>双录取留学</li>
+					<li><span>优</span>双录取留学</li>
+					<li><span>优</span>双录取留学</li>
+					<li><span>优</span>双录取留学</li>
+				</ul>	
+			</section>
+			<!--高考留学&高中生留学必看-->
+			<section class='rmyuanxiao2'>
+				<header class="remengyuanxiao2 ">
+					<section >高考留学&高中生留学必看</section>
+					<section>
+						<a href=" ">专家咨询</a>
+					</section>
+				</header>
+				<!--初名京师大学堂-->
+				<section class="baoming2 ">
+					<!--<label for="baominglianjie ">-->
+					<section class="baoming-left2 ">
+						<p><span class="hot2 ">荐</span><span class="qinghua2 "><a href=" " id="baominglianjie2 ">初名京师大学堂，是中国第一所国立学校</a></span></p>
+						
+					</section>
+					<section class="baoming-right2 ">
+						<a href=" " ><img src="images/ico_btn10.png " alt=" " /></a>
+					</section>
+				<!--	</label>-->
+				</section>
+				<section class="baoming2 ">
+					<!--<label for="baominglianjie ">-->
+					<section class="baoming-left2 ">
+						<p><span class="hot2 ">荐</span><span class="qinghua2 "><a href=" " id="baominglianjie2 ">初名京师大学堂，是中国第一所国立学校</a></span></p>
+						
+					</section>
+					<section class="baoming-right2 ">
+						<a href=" " ><img src="images/ico_btn10.png " alt=" " /></a>
+					</section>
+				<!--	</label>-->
+				</section>
+				<section class="baoming2 ">
+					<!--<label for="baominglianjie ">-->
+					<section class="baoming-left2 ">
+						<p><span class="hot2 ">荐</span><span class="qinghua2 "><a href=" " id="baominglianjie2 ">初名京师大学堂，是中国第一所国立学校</a></span></p>
+						
+					</section>
+					<section class="baoming-right2 ">
+						<a href=" " ><img src="images/ico_btn10.png " alt=" " /></a>
+					</section>
+				<!--	</label>-->
+				</section>
+				<section class="baoming2 ">
+					<!--<label for="baominglianjie ">-->
+					<section class="baoming-left2 ">
+						<p><span class="hot2 ">荐</span><span class="qinghua2 "><a href=" " id="baominglianjie2 ">初名京师大学堂，是中国第一所国立学校</a></span></p>
+						
+					</section>
+					<section class="baoming-right2 ">
+						<a href=" " ><img src="images/ico_btn10.png " alt=" " /></a>
+					</section>
+				<!--	</label>-->
+				</section>
+				<section class="baoming2 ">
+					<!--<label for="baominglianjie ">-->
+					<section class="baoming-left2 ">
+						<p><span class="hot2 ">荐</span><span class="qinghua2 "><a href=" " id="baominglianjie2 ">初名京师大学堂，是中国第一所国立学校</a></span></p>
+						
+					</section>
+					<section class="baoming-right2 ">
+						<a href=" " ><img src="images/ico_btn10.png " alt=" " /></a>
+					</section>
+				<!--	</label>-->
+				</section>
+				<!--一对一定制留学-->
+				<section class="yiduiyidingzhi ">
+					<button>一对一在线定制留学方案</button>
+				</section>
+			</section>
+			<!--留学精彩专题-->
+			<section class="liuxuezhuanti ">
+				<!--留学精彩专题标题-->
+				<header>
+					<p>留学精彩专题</p>
+					<p>专家资讯</p>
+				</header>
+				<!--留学图-->
+				<section class="liuxuetu ">
+					<section class="liuxuetu-top ">
+						<section><p>高中生定制留学</p></section>
+						<seciton class="liuxueyuke ">
+							<p>双录取留学方案</p>
+							<section>
+								<p>留学预科<br>优势解析</p>
+								<p>最省钱<br>留学方案</p>
+							</section>
+						</seciton>
+					</section>
+					<section class="liuxue-bottom ">
+						<p><span>艺术类留学名校</span></p>
+						<p>留学评估专家1对1</p>
+					</section>
+				</section>
+				<!--留学无忧 人人都是名校生-->
+				<section class="liuxuewuyou ">
+					<p class="wuyou ">留学无忧 人人都是名校生</p>
+					<ul>
+						<li class="lxone ">
+							<p>10+</p>
+							<p>11届名校留学展</p>
+						</li>
+						<li class="lxtwo ">
+							<p>100%</p>
+							<p>成功留学保障</p>
+						</li>
+						<li class="lxthree ">
+							<p>21566+</p>
+							<p>学员成功申请</p>
+						</li>
+						<li class="lxfour ">
+							<p>158+</p>
+							<p>国内重点大学</p>
+						</li>
+					</ul>
+				</section>
+				<!--10+-->
+				
+			</section>
+			<!--底部-->
+			<footer>
+			<ul class="icon_lists clear ">
+				<li>
+					<i class="icon iconfont icon-icon-home-default "></i>
+					<div class="name ">网站首页</div>
+				</li>
+				<li>
+					<i class="icon iconfont icon-dianhua "></i>
+					<div class="name ">立即通话</div>
+				</li>
+				<li>
+					<i class="icon iconfont icon-weixin "></i>
+					<div class="name ">在线咨询</div>
+				</li>
+				<li>
+					<i class="icon iconfont icon-9yijianfankui "></i>
+					<div class="name ">录取测试</div>
+				</li>
+			</ul>
+			</footer>
+			<!--返回顶部-->
+			<section class="backtop none">
+				<img src="images/gotop.png" alt="" />
+			</section>
+			
+			<!--底部左侧按钮-->
+			<section class="zhiwen">
+				<ul class="zhiwenright">
+					<li class="zhiwenmenu"><img src="images/ico_btn22.png" alt="" class="zhiwenfirst"/></li>
+					<li class="zhiwen-pic-one"><img src="images/ico-zw-1.png" alt="" /></li>
+					<li class="zhiwen-pic-two"><img src="images/ico-zw-2.png" alt="" /></li>
+					<li class="zhiwen-pic-three"><img src="images/ico-zw-3.png" alt="" /></li>
+					<li class="zhiwen-pic-four"><img src="images/ico-zw-4.png" alt="" /></li>
+					<li class="zhiwen-pic-five"><img src="images/ico-zw-5.png" alt="" /></li>
+				</ul>
+			</section>
+			
+			<!--黄色弹框-->
+			<section class="fudongwindow">
+				<img src="images/ico_btn25.png" alt="" class="guanbi"/>
+				<p>2016重点大学官方留学</p>
+				<p>国内重点+海外名校“双录取”</p>
+				<p>留学无忧 人人都是名校生</p>
+				<p class="fudongwindow_zixun"><span>马上咨询名校专家</span></p>
+				<p>
+					<input type="text" placeholder="请输入您的手机号码"  />
+					<input type="button" value="免费回电"/>
+				</p>
+				<p>节省80%的留学准备时间</p>
+			</section>
+		</section>
+		
+		
+
+	</body>
+		
+</html>

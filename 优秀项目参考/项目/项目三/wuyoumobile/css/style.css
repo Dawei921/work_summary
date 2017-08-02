@@ -1,0 +1,912 @@
+@charset "utf-8";
+.slide_left{
+	position: relative;
+}
+.menum{
+	width:7.5rem;
+	height:0.94rem;
+	background:#f0f0f0;
+	display:flex;
+}
+.menum .menum-left{
+	width:5.47rem;
+	height:0.37rem;
+	margin-left:0.22rem;
+	margin-top:0.27rem;
+}
+.menum .menum-left img{
+	width:1.56rem;
+	height:0.37rem;
+	
+}
+.menum .menum-right img:first-child{
+	margin-right:0.32rem;	
+	margin-top:0.17rem;
+}
+.menum .menum-right img{
+	width:0.6rem;
+	height:0.6rem;
+}
+/*nav*/
+.navone{
+	width:7.5rem;
+	height:2.03rem;
+	display:flex;
+	background:#f6f6f6;
+	justify-content:space-around;
+}
+.navone>section{
+	height:1.72rem;
+}
+.navone>section p{
+	height:1.47rem;
+	line-height:1.3rem;
+}
+.navone section img{
+	height:0.93rem;
+	width:0.93rem;
+}
+/*banner*/
+.banner{
+	width: 7.5rem;
+	height: 3.01rem;
+	margin: 0 auto;
+	overflow: hidden;
+	font-size: 0.24rem;
+	/*border: 1px solid #808080;*/
+	/*background: url(../images/banner.jpg) no-repeat center;  注意背景图的使用*/
+	/*background-size: 7.5rem 3.01rem;*/
+}
+.banner img{ 
+	width: 7.5rem;
+	height: 3.01rem;
+}
+/*留学头条*/
+.toutiao{
+	width:7.5rem;
+	display:flex;
+}
+/*.toutiao ul li{
+	float:left;
+}*/
+
+.toutiao>p{
+	height:0.85rem;
+}
+.toutiao p:first-child img{
+	width:1.48rem;
+	height:0.35rem;
+	margin-left:0.22rem;
+	margin-top:0.27rem;
+	
+}
+/*.toutiao ul li:first-child a{
+	display:inline-block;
+	margin-top:0.26rem;
+	margin-left:0.1rem;
+	font-size:0.3rem;
+	color:#3c3c3c;
+}*/
+/*.toutiao ul li:nth-child(2) a{
+	display:inline-block;
+	margin-top:0.26rem;
+	margin-left:0.09rem;
+	font-size:0.3rem;
+	color:#3c3c3c;
+}*/
+/*我是高中生*/
+.nianji{
+	width:7.5rem;
+	background:#f5f5f5;
+}
+.nianji .nianji-top{
+	display:flex;
+	justify-content:space-around;
+}
+.nianji .nianji-top>section{
+	width:2.38rem;
+	height:2rem;
+	margin-top:0.33rem;
+	margin-bottom:0.24rem;
+}
+.nianji .nianji-top>section:first-child{
+	background:url(../images/bg-block-1.jpg);
+}
+.nianji .nianji-top>section:nth-child(2){
+	background:url(../images/bg-block-2.jpg);
+}
+.nianji .nianji-top>section:nth-child(3){
+	background:url(../images/bg-block-3.jpg);
+}
+/*我是高中生内部内容*/
+.nianji .nianji-top>section>p:first-child{
+	width:1.54rem;
+	height:0.36rem;
+	background:#347296;
+	border-radius:0 0.18rem 0.18rem 0;
+	font-size:0.28rem;
+	color:white;
+	line-height:0.36rem;
+	margin-top:0.26rem;
+	padding-left:0.15rem;
+}
+.nianji .nianji-top>section>p:nth-child(2){
+	margin-top:0.32rem;
+	font-size:0.23rem;
+	color:white;
+	padding-left:0.15rem;
+}
+.nianji .nianji-top .nianjidaxue p:first-child{
+	background:#664584;
+}
+.nianji .nianji-top .nianjichuzhong p:first-child{
+	background:#9e7650;
+}
+.nianji .nianji-top>section>p:nth-child(3){
+	margin-top:0.17rem;
+	font-size:0.23rem;
+	color:white;
+	padding-left:0.15rem;
+}
+
+.nianji .nianji-kaoshi{
+	display:flex;
+	justify-content:space-around;
+}
+.nianji .nianji-kaoshi>section{
+	width:3.66rem;
+	height:1.55rem;
+	margin-bottom:0.32rem;
+}
+.nianji .nianji-kaoshi>section:first-child{
+	background:url(../images/bg-block-4.jpg);
+}
+.nianji .nianji-kaoshi>section:last-child{
+	background:url(../images/bg-block-5.jpg);
+}
+.nianji .nianji-kaoshi>section>p:first-child{
+	margin-top:0.26rem;
+	margin-left:0.14rem;
+	font-size:0.36rem;
+	color:white;
+}
+.nianji .nianji-kaoshi>section>p:nth-child(2){
+	margin-top:0.28rem;
+	margin-left:0.13rem;
+	font-size:0.26rem;
+	color:white;
+}
+/*留学目的地*/
+.liuxue-banner{
+	border-bottom:0.3rem solid #f6f6f6;
+}
+.liuxue{
+	width:7.5rem;
+}
+.rmyuanxiao{
+	width:7.5rem;
+}
+.liuxue,.remengyuanxiao{
+	display:flex;
+}
+.liuxue section:first-child{
+	margin-left:0.23rem;
+	font-size:0.33rem;
+	width:4.96rem;
+	height:0.82rem;
+	line-height:0.82rem;
+	padding-left:0.61rem;
+	background:url(../images/icon1.png) no-repeat left;
+	background-size:0.44rem 0.4rem;
+}
+.liuxue section:last-child,.remengyuanxiao section:last-child{
+	padding-left:0.45rem;
+	font-size:0.26rem;
+	height:0.82rem;
+	line-height:0.82rem;
+	/*padding-left:0.61rem;*/
+	background:url(../images/ico_btn9.png) no-repeat left;
+	background-size:0.31rem 0.26rem;
+}
+.liuxue-banner{
+	width:7.5rem;
+}
+/*目的地轮播*/
+.mudidi-banner{
+	height:4.72rem;
+	width:7.5rem;
+}
+.mudidi-banner>section{
+	margin-left:0.23rem;
+	margin-top:0.42rem;
+}
+.mudidi-banner-top>ul>li{
+	display:inline-block;
+}
+.mudidi-banner-bottom>ul>li{
+	display:inline-block;
+}
+.mudidi-banner img{
+	width:1.1rem;
+	height:1.1rem;
+}
+.mudidi-banner p{
+	font-size:0.27rem;
+	margin-top:0.13rem;
+	text-align:center;
+	
+}
+.mudidi-banner a{
+	color:black;
+}
+.mudidi-banner li{
+	margin-right:0.56rem;
+}
+.liuxue-banner  .page{
+	bottom:58px;
+	left:-36px;
+}
+/*热门留学院校*/
+.remengyuanxiao{
+	border-bottom:0.01rem solid #f6f6f6;
+	background:#border-top:0.29rem solid #f6f6f6;
+}
+.remengyuanxiao section:first-child{
+	margin-left:0.23rem;
+	font-size:0.33rem;
+	width:4.96rem;
+	height:0.82rem;
+	line-height:0.82rem;
+	padding-left:0.61rem;
+	background:url(../images/icon2.png) no-repeat left;
+	background-size:0.44rem 0.4rem;
+}
+/*选择地区*/
+.rmyuanxiao .chosediqu{
+	display:flex;
+	justify-content: space-between;
+	overflow: hidden;
+}
+
+.rmyuanxiao .chosediqu li{
+	height:0.87rem;
+	line-height:0.87rem;
+	width:1.5rem;
+	text-align:center;
+	font-size:0.29rem;
+
+}
+.rmyuanxiao .chosediqu li a:hover{
+	
+	color:#fe442d;
+}
+/*.rmyuanxiao .chosediqu li:hover{
+	border-bottom:1px solid #fe442d;
+}*/
+.baoming{
+	display:flex;
+	height:1.54rem;
+	border-bottom:1px solid #f6f6f6;
+	margin-left:0.23rem;
+}
+.baoming .baoming-left p:first-child .hot{
+	display:inline-block;
+	border-radius:0.09rem;
+	line-height:0.37rem;
+	text-align:center;
+	width:0.36rem;
+	height:0.37rem;
+	background:#fe3c24;
+	color:white;
+	font-size:0.26rem;
+}
+.baoming .baoming-left{
+	margin-top:0.24rem;
+}
+.baoming .baoming-left .qinghua{
+	font-size:0.31rem;
+	margin-left:0.12rem;
+	color:#2a2a2a;
+	margin-right: 0.1rem;
+}
+.baoming .baoming-left p:first-child{
+	margin-bottom:0.23rem;
+}
+.baoming .baoming-left .baomingzhong{
+	width:1rem;
+	height:0.37rem;
+	color:#23ce8d;
+	border:2px solid #23CE8D;
+	border-radius:6px;
+	padding:0.02rem;
+}
+.baoming .baoming-left p:last-child{
+	font-size:0.24rem;
+	color:#c1c1c1;
+}
+.baoming .baoming-right{
+	margin-left:0.58rem;
+	margin-top:0.62rem;
+}
+.baoming .baoming-right img{
+	width:0.2rem;
+	height:0.36rem;
+}
+/*加载更多*/
+.moreinformation {
+	width:7.5rem;
+	height:1.6rem;
+	line-height: 1.6rem;
+	text-align: center;
+}
+.moreinformation button{
+	display:inline-block;
+	width:7.03rem;
+	height:0.73rem;
+	background:#FFFFFF;
+	border:1px solid #cfcfcf;
+	font-size:0.29rem;
+	color:#6d6d6d;
+}
+/*智能选校*/
+.zhinengxuanxiao{
+	width:7.5rem;
+	height:2.07rem;
+	background:#f5f5f5;
+	display:flex;
+	
+}
+.zhinengxuanxiao>section:first-child{
+		display:flex;
+	width:3.76rem;
+	height:1.45rem;
+	background:url(../images/back_btn1.png) no-repeat;
+	background-size:3.76rem 1.45rem;
+	margin-top:0.31rem;
+}
+.zhinengxuanxiao>section:last-child{
+		display:flex;
+	width:3.76rem;
+	height:1.45rem;
+	background:url(../images/back_btn2.png) no-repeat;
+	background-size:3.76rem 1.45rem;
+	margin-top:0.31rem;
+}
+.zhinengxuanxiao .zhinengxuanxiao-left{
+	height:1.45rem;
+	
+}
+.zhinengxuanxiao .zhinengxuanxiao-left img{
+	width:0.77rem;
+	height:0.76rem;
+	margin-top:0.36rem;
+	margin-left: 0.3rem;
+}
+.zhinengxuanxiao .zhinengxuanxiao-right p:first-child{
+	font-size:0.36rem;
+	color:white;
+	margin-top:0.37rem;
+	margin-left:0.17rem;
+}
+.zhinengxuanxiao .zhinengxuanxiao-right p:last-child{
+	font-size:0.25rem;
+	margin-left: 0.15rem;
+	color:white;
+	/*margin-top:0.25rem;*/
+}
+/*第二个竞争测试*/
+
+.zhinengxuanxiao>section:last-child{
+		display:flex;
+	width:3.76rem;
+	height:1.45rem;
+	background:url(../images/back_btn2.png) no-repeat;
+	background-size:3.76rem 1.45rem;
+	margin-top:0.31rem;
+}
+.zhinengxuanxiao .zhinengxuanxiao-two{
+	height:1.45rem;
+	
+}
+.zhinengxuanxiao .zhinengxuanxiao-two img{
+	width:0.77rem;
+	height:0.76rem;
+	margin-top:0.36rem;
+	margin-left: 0.3rem;
+}
+.zhinengxuanxiao .zhinengxuanxiao-botton p:first-child{
+	font-size:0.36rem;
+	color:white;
+	margin-top:0.37rem;
+	margin-left:0.17rem;
+}
+.zhinengxuanxiao .zhinengxuanxiao-botton p:last-child{
+	font-size:0.25rem;
+	margin-left: 0.15rem;
+	color:white;
+	/*margin-top:0.25rem;*/
+}
+/*<!--优选留学方案-->*/
+.youxuanliuxue{
+	display:flex;
+	height:1.05rem;
+	width:7.5rem;
+	border-bottom:0.3rem solid #f5f5f5;
+	font-size:0.29rem;
+}
+.youxuanliuxue img{
+	width:0.36rem;
+	height:0.2rem;
+}
+.youxuanliuxue p:first-child{
+	width:6.19rem;
+	line-height:1.05rem;
+	margin-left:0.24rem;
+	padding-left: 0.57rem;
+	background:url(../images/icon3.png) no-repeat;
+		background-size:0.44rem 0.4rem;
+		background-position-y: 0.33rem;
+}
+.youxuanliuxue p:last-child{
+	margin-top:0.38rem;
+}
+.youxuanliuxuexuanxiang>ul>li{
+	display:inline-block;
+	height:0.92rem;
+	width:3.49rem;
+	font-size:0.2rem;
+	color:#000000;
+	line-height: 0.92rem;
+	border-bottom:1px solid #eeeeee;
+	padding-left:0.22rem;
+	background:#f6f6f6;
+}
+.youxuanliuxuexuanxiang>ul>li>span{
+	
+	padding:1px;
+	background:#fe4d37;
+	color:#f6f6f6;
+	border:3px solid #fe4d37;
+	border-radius:3px;
+	margin-right: 0.09rem;
+}
+.youxuanliuxuexuanxiang{
+	background:#f6f6f6;
+}
+/*高考留学&高中生留学必看*/
+.rmyuanxiao2{
+	width:7.5rem;
+}
+.remengyuanxiao2{
+	display:flex;
+	border-bottom:0.01rem solid #f6f6f6;
+	background:#border-top:0.29rem solid #f6f6f6;
+}
+.remengyuanxiao2 section:first-child{
+	margin-left:0.23rem;
+	font-size:0.33rem;
+	width:4.96rem;
+	height:0.82rem;
+	line-height:0.82rem;
+	padding-left:0.61rem;
+	background:url(../images/icon4.png) no-repeat left;
+	background-size:0.44rem 0.4rem;
+}
+.remengyuanxiao2 section:last-child{
+	margin-top:0.27rem;
+	background:url(../images/ico_btn9.png) no-repeat;
+	background-size:0.31rem 0.26rem;
+}
+.remengyuanxiao2 section:last-child a{
+	padding-left:0.47rem;
+	font-size:0.26rem
+}
+/*初名京师大学堂*/
+
+.baoming2{
+	display:flex;
+	height:0.93rem;
+	border-bottom:1px solid #f6f6f6;
+	margin-left:0.23rem;
+}
+.baoming2 .baoming-left2 p:first-child .hot2{
+	display:inline-block;
+	border-radius:0.09rem;
+	line-height:0.37rem;
+	text-align:center;
+	width:0.36rem;
+	height:0.37rem;
+	background:#ff8b20;
+	color:white;
+	font-size:0.26rem;
+}
+.baoming2 .baoming-left2{
+	margin-top:0.30rem;
+}
+.baoming2 .baoming-left2 .qinghua2{
+	font-size:0.31rem;
+	margin-left:0.12rem;
+	color:#2a2a2a;
+	margin-right: 0.1rem;
+}
+.baoming2 .baoming-left2 p:first-child{
+	margin-bottom:0.23rem;
+}
+.baoming2 .baoming-left2 .baomingzhong2{
+	width:1rem;
+	height:0.37rem;
+	color:#23ce8d;
+	border:2px solid #23CE8D;
+	border-radius:6px;
+}
+.baoming2 .baoming-right2{
+	margin-left:0.66rem;
+	margin-top:0.28rem;
+}
+.baoming2 .baoming-right2 img{
+	width:0.2rem;
+	height:0.36rem;
+}
+/*加载更多
+.moreinformation {
+	width:7.5rem;
+	height:1.6rem;
+	line-height: 1.6rem;
+	text-align: center;
+}
+.moreinformation button{
+	display:inline-block;
+	width:7.03rem;
+	height:0.73rem;
+	background:#FFFFFF;
+	border:1px solid #cfcfcf;
+	font-size:0.29rem;
+	color:#6d6d6d;
+}*/
+.yiduiyidingzhi{
+	width:7.5rem;
+	height:1.54rem;
+
+}
+.yiduiyidingzhi button{
+	width:4.05rem;
+	height:0.7rem;
+	color:#ff7a00;
+	border:2px solid #ffb36e;
+	font-size:0.29rem;
+	background:white;
+	margin-top:0.39rem;
+	margin-left:1.71rem;
+	
+}
+/*留学精彩专题*/
+.liuxuezhuanti{
+	background:#f5f5f5;
+	padding-top:0.3rem
+}
+.liuxuezhuanti header{
+	
+	width:7.5rem;
+	height:0.81rem;
+	display:flex;
+	background:#ffffff;
+}
+.liuxuezhuanti header p:first-child{
+	font-size:0.33rem;
+	background:url(../images/icon5.png) no-repeat;
+	background-size:0.44rem 0.4rem;
+	background-position:0 0.22rem;
+	margin-left:0.24rem;
+	padding-left:0.59rem;
+	line-height: 0.81rem;
+	width:5.56rem;
+}
+.liuxuezhuanti header p:last-child{
+	font-size:0.27rem;
+	color:#ff4d37;
+	background:url(../images/ico_btn9.png) no-repeat;
+	background-size:0.31rem 0.26rem;
+	width:1.3rem;
+	line-height:0.81rem;
+	background-position: 0 0.25rem;
+	padding-left: 0.71rem;
+	border-bottom:1px solid #f5f5f5;
+}
+/*留学图*/
+.liuxuetu{
+	background:#FFFFFF;
+	padidng-top:0.15rem;
+	padding-left: 0.27rem;
+	font-size: 0.32rem;
+	color:white;
+}
+.liuxuetu .liuxuetu-top{
+	display:flex;
+}
+.liuxuetu .liuxuetu-top .liuxueyuke section{
+	display: flex;
+}
+.liuxuetu .liuxuetu-top section:first-child{
+	background:url(../images/index_img.jpg) no-repeat;
+	background-size:2.9rem 2.9rem;
+	width:2.92rem;
+	height:2.95rem;
+	
+}
+.liuxuetu .liuxuetu-top section:first-child p{
+	margin-top:0.6rem;
+	margin-left:0.22rem;
+}
+.liuxuetu .liuxuetu-top .liuxueyuke{
+	margin-left:0.16rem;
+}
+.liuxuetu .liuxuetu-top .liuxueyuke>p{
+	text-align: center;
+	line-height:1.4rem
+}
+.liuxuetu .liuxuetu-top .liuxueyuke>section{
+	margin-top:0.16rem;
+}
+.liuxuetu .liuxuetu-top .liuxueyuke>section>p:first-child{
+	margin-right:0.2rem;
+}
+.liuxuetu .liuxuetu-top .liuxueyuke>p:first-child{
+	width:4.14rem;
+	height:1.36rem;
+	background:url(../images/index_img1.jpg) no-repeat;
+	background-size:4.14rem 1.36rem;
+}
+.liuxuetu .liuxuetu-top .liuxueyuke>section>p:first-child{
+	width:1.97rem;
+	height:1.36rem;
+	background:url(../images/index_img2.jpg) no-repeat;
+	background-size:1.97rem 1.36rem;
+}
+.liuxuetu .liuxuetu-top .liuxueyuke>section>p:last-child{
+	width:1.97rem;
+	height:1.36rem;
+	background:url(../images/index_img3.jpg) no-repeat;
+	background-size:1.97rem 1.36rem;
+}
+.liuxuetu .liuxue-bottom{
+	display: flex;
+	margin-top:0.16rem;
+}
+.liuxuetu .liuxue-bottom>p:first-child{
+	margin-right: 0.18rem;
+	line-height:1.36rem;
+	text-align: center;
+}
+
+.liuxuetu .liuxue-bottom>p:first-child{
+	width:3.52rem;
+	height:1.36rem;
+	background:url(../images/index_img4.jpg) no-repeat;
+	background-size:3.52rem 1.36rem;
+}
+.liuxuetu .liuxue-bottom>p:last-child{
+	width:3.52rem;
+	height:1.36rem;
+	background:url(../images/index_img5.jpg) no-repeat;
+	background-size:3.52rem 1.36rem;
+	line-height:1.36rem;
+	text-align: center;
+}
+/*留学无忧 人人都是名校生*/
+.liuxuewuyou>p{
+	width:7.5rem;
+	height:1.13rem;
+	background:#FFFFFF;
+	border-bottom:1px solid #f5f5f5;
+	font-size:0.38rem;
+	color:#646464;
+	text-align: center;
+	line-height: 1.13rem;
+	border-bottom:0.3rem solid #f5f5f5;
+}
+.liuxuewuyou ul{
+	height:3.07rem;
+	background: #ffffff;
+	position:relative;
+	border-bottom:0.3rem solid #f5f5f5;
+}
+.liuxuewuyou ul li{
+	position:absolute;
+	width:3.74rem;
+	height: 1.18rem;
+	background: #ffffff;
+	padding-top:0.51rem;
+}
+
+.liuxuewuyou .lxtwo{
+	left:3.74rem;
+}
+
+
+.liuxuewuyou .lxfour{
+	left:3.74rem;
+}
+.liuxuewuyou .lxtwo,.liuxuewuyou .lxthree{
+	top:1.20rem;
+}
+.liuxuewuyou .lxone>p:first-child,.liuxuewuyou .lxtwo>p:first-child,.liuxuewuyou .lxthree>p:first-child,.liuxuewuyou .lxfour>p:first-child{
+	font-size:0.32rem;
+	color:#fe3c24;
+}
+.liuxuewuyou .lxone>p:last-child,.liuxuewuyou .lxtwo>p:last-child,.liuxuewuyou .lxthree>p:last-child,.liuxuewuyou .lxfour>p:last-child{
+	font-size: 0.24rem;
+	color:#8b8b8b;
+}
+.liuxuewuyou .lxone{
+	background:url(../images/ico_btn18.png) no-repeat;
+	background-size:0.93rem 0.92rem;
+	background-position: 0 0.49rem;
+}
+.liuxuewuyou .lxfour{
+	background:url(../images/ico_btn19.png) no-repeat;
+	background-size:0.93rem 0.92rem;
+	background-position: 0 0.49rem;
+}
+.liuxuewuyou .lxthree{
+	background:url(../images/ico_btn20.png) no-repeat;
+	background-size:0.93rem 0.92rem;
+	background-position: 0 0.49rem;
+}
+.liuxuewuyou .lxtwo{
+	background:url(../images/ico_btn21.png) no-repeat;
+	background-size:0.93rem 0.92rem;
+	background-position: 0 0.49rem;
+}
+.liuxuewuyou .lxone,.lxthree{
+	left:0.4rem;
+}
+.liuxuewuyou ul li p{
+	margin-left: 1.11rem;
+}
+/*底部栏*/
+footer{
+	font-size:0.22rem;
+		height:1.17rem;
+}
+footer ul {
+	display:flex;
+	color:#9c9c9c;
+	
+}
+
+footer ul li i{
+	width:0.5rem;
+	height:0.5rem;
+}
+.icon_lists{
+	width:7.5rem !important;
+	height:1.15rem;
+}
+.icon_lists li{
+	height:1.15rem;
+	margin-left:0.52rem;
+}
+.icon_lists .icon{
+	font-size:0.42rem;
+	line-height:0.81rem;
+	margin:0.1rem 0;
+	
+}
+.icon-icon-home-default:before{
+	width:1rem;
+	height:0.9rem;
+}
+/*侧边栏*/
+.slide_right{
+	width:3rem;
+	height:100%;
+	position:fixed;
+	background:#242e30 ;
+	right:-3rem;
+	top:0;
+	z-index:999;
+	font-size:0.29rem ;
+	color:white;
+}
+.slide_right li{
+	height:0.6rem;
+	border-bottom: 1px solid #7c8283;
+	text-align: center;
+	line-height: 0.6rem;
+}
+.slide_left{
+	position: relative;
+	top:0;
+	right:0;
+}
+/*图片的上翻页*/
+
+.headnews ul {
+    width: 5.23rem;
+    height: 0.4rem;
+    overflow: hidden;
+    display: inline-block;
+    float: left;
+    margin-left: 0.2rem;
+    margin-top: 0.26rem;
+    
+}
+
+.headnews ul li {
+    width: 5.23rem;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    overflow: hidden;
+   font-size: 0.3rem;
+}
+/*选项卡切换*/
+.on{
+	color:#fe3d25;
+	border-bottom:1px solid #fe3d25;
+}
+/*返回顶部*/
+.backtop{
+	position:fixed;
+	right:0;
+	bottom:1rem;
+}
+/*底部左侧指纹按钮*/
+.zhiwen{
+	position: fixed;
+	bottom:0.6rem;
+}
+.zhiwen .zhiwenright li{
+	position: absolute;
+	bottom: 10px;
+}
+
+.zhiwen .zhiwenright img{
+	width:0.77rem;
+	height:0.77rem;
+
+}
+.zhiwen-pic-one,.zhiwen-pic-two,.zhiwen-pic-three,.zhiwen-pic-four,.zhiwen-pic-five{
+	bottom: 0.35rem !important;
+	}
+
+.zhiwenfirst {
+	width:1.06rem !important;
+	height:1.09rem !important;
+	position: relative;
+	z-index: 999;
+
+}
+/* .zhiwenright li{
+	float:left;
+	margin-right:0.1rem;
+} */
+/*<!--黄色弹框--*/
+.fudongwindow{
+	background:#ff7802;
+	height:4.93rem;
+	width:6rem;
+	position:fixed;
+	left:8%;
+	top:8%;
+	z-index: 999;
+	font-size: 0.35rem;
+	color:#ffffff;
+	text-align: center;
+	line-height: 0.8rem;
+}
+.fudongwindow_zixun{
+	background:#ffed74;
+	width:4.94rem;
+	border-radius: 0.23rem;
+	margin:0 auto;
+}
+.fudongwindow_zixun span{
+	margin-bottom: 2px;
+}
+.fudongwindow img{
+	position: absolute;
+	right:-0.27rem;
+	top:-0.27rem;
+	width:0.54rem;
+	height:0.54rem;
+} 

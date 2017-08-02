@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ceshgiu</title>
+    <link rel="stylesheet" href="">
+    <style>
+    .rel {
+        position: relative;
+    }
+    
+    .abs {
+        position: absolute;
+    }
+    
+    .page {
+        background-color: #fff;
+    }
+    
+    input {
+        outline: none;
+        -webkit-appearance: none;
+        /*去除系统默认的样式*/
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        /* 点击高亮的颜色*/
+    }
+    
+    .bar-tab {
+        padding: 0 0.5rem;
+    }
+    
+    .tab-item {
+        margin-bottom: 0.5rem;
+    }
+    
+    .bar-bottom {
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        padding: 0.5rem 0.6rem;
+    }
+    
+    .button-ok {
+        font-size: 0.85rem;
+        border: none;
+        height: 2rem;
+        line-height: 2rem;
+        color: white;
+        background-color: #03a9f4;
+    }
+    
+    .content-bd {
+        padding: 1rem 0.6rem 0;
+    }
+    
+    .tit {
+        margin: 0 0 0.5rem;
+        font-size: 0.85rem;
+        color: #333333;
+    }
+    
+    .input-box {
+        display: flex;
+        display: -webkit-box;
+        display: -webkit-flex;
+        align-content: center;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        margin: 0 auto;
+    }
+    
+    .input-border {
+        flex: 1;
+        display: inline-block;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        border: 1px solid #ccc;
+        border-right: none;
+        position: relative;
+    }
+    
+    .input-border:before {
+        content: '';
+        display: block;
+        padding-left: 100%;
+        padding-bottom: 100%;
+    }
+    
+    .input-pass:after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 20%;
+        height: 20%;
+        background-color: #000;
+        border-radius: 100%;
+        top: 40%;
+        left: 40%;
+    }
+    
+    .input-border:first-child {
+        border-radius: 3px 0 0 3px;
+    }
+    
+    .input-border:last-of-type {
+        border-radius: 0 3px 3px 0;
+        border-right: 1px solid #ccc;
+    }
+    
+    .input-box input {
+        width: 100%;
+        border: none;
+        opacity: 0;
+        outline: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+    
+    .prompt {
+        padding-top: 0.3rem;
+    }
+    
+    .prompt-txt {
+        font-size: 0.65rem;
+        text-align: left;
+        color: red;
+    }
+    
+    .forgetPwd {
+        font-size: 0.65rem;
+        color: #03a9f4;
+        text-align: right;
+    }
+    
+    .btn-disabled {
+        background-color: #bbb;
+    }
+    
+    .hide {
+        display: none;
+    }
+    
+    .show {
+        display: block;
+    }
+    
+    .mask {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: 10;
+    }
+    
+    .mask > div {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .mode {
+        top: 35%;
+        left: 10%;
+        right: 10%;
+        width: 80%;
+        border-radius: 4px;
+        box-shadow: 0 0 5px 0px #000;
+        background-color: #fff;
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    .mode-title {
+        padding: 0.85rem 0 0.3rem 0;
+        font-size: 0.85rem;
+        color: #111;
+        font-weight: 600;
+    }
+    
+    .mode-body {
+        padding: 0rem 0 0.7rem 0;
+        font-size: 0.8rem;
+        color: #666;
+    }
+    
+    .mode-button {
+        border-top: 1px solid #e0e0e0;
+        display: -webkit-flex;
+        display: flex;
+    }
+    
+    .button-l {
+        flex: 1;
+        width: 50%;
+        border-right: 1px solid #e0e0e0;
+    }
+    
+    .button-r {
+        flex: 1;
+        width: 50%;
+    }
+    
+    .mode-button button {
+        width: 100%;
+        font-size: 0.8rem;
+        color: #159aea;
+        padding: 0.55rem 0 0.5rem;
+        border: none;
+        background-color: transparent;
+    }
+    
+    .content-backPwd {
+        background-color: white;
+    }
+    
+    .backPwd-nub {
+        padding: 0.75rem 0;
+        color: #333;
+        text-align: center;
+    }
+    
+    .backPwd-tit {
+        font-size: 0.85rem;
+    }
+    
+    .backPwd-tel {
+        font-size: 1rem;
+    }
+    
+    .varCode {
+        width: 100%;
+        padding: 0.3rem 0;
+        border-top: 1px solid #e0e0e0;
+        border-bottom: 1px solid #e0e0e0;
+    }
+    
+    .varCode input {
+        width: 62%;
+        border: none;
+        font-size: 0.7rem;
+        color: #ccc;
+        vertical-align: middle;
+        padding: 0.2rem 0.6rem;
+    }
+    
+    .varCode-r {
+        float: right;
+        padding: 0rem 0.6rem;
+        border-left: 1px solid #e0e0e0;
+    }
+    
+    .varCode-r button {
+        border: none;
+        font-size: 0.7rem;
+        background-color: transparent;
+        vertical-align: middle;
+        color: #03a9f4;
+    }
+    </style>
+</head>
+
+<body>
+    <!--
+	作者：th
+	时间：2016-12-26
+	描述: data-state =true	时代表是输入密码
+		  data-state =false 	时代表是设置密码
+-->
+    <div class="page-group">
+        <div class="page">
+            <header class="bar bar-nav">
+                <button class="button button-link button-nav pull-left history" data-cid="$!{payslipVO.payslipDetail.cid}" data-eid="$!{payslipVO.payslipDetail.eid}">
+                    返回
+                </button>
+                <h1 class="title">工资条</h1>
+            </header>
+            <div class="content">
+                <div class="content-bd" data-state="true">
+                    <div class="tit">
+                        工资条已加密，请输入隐私密码：
+                    </div>
+                    <div class="input-box rel">
+                        <div class="input-border">
+                        </div>
+                        <div class="input-border">
+                        </div>
+                        <div class="input-border">
+                        </div>
+                        <div class="input-border">
+                        </div>
+                        <div class="input-border">
+                        </div>
+                        <div class="input-border">
+                        </div>
+                        <input type="tel" id="passinput" class="dispass abs" name="tel" maxlength="6" />
+                    </div>
+                    <div class="prompt">
+                        <div class="prompt-txt">
+                        </div>
+                        <div class="forgetPwd">
+                            <a href="javascript:;" name="backPwd">忘记密码？</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content content-backPwd hide">
+                <!--找回密码-->
+                <div class="backPwd-nub">
+                    <div class="backPwd-tit">
+                        创建隐私密码，请验证身份
+                    </div>
+                    <div class="backPwd-tel">
+                        139****5529
+                    </div>
+                </div>
+                <div class="varCode clearfix">
+                    <input type="number" name="Code" id="Code" value="" placeholder="请输入验证码" />
+                    <div class="varCode-r">
+                        <button id="getCode">获取验证码</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bar-bottom">
+                <a href="javascript:void(0);" class="button button-ok btn-disabled">
+				确定
+			</a>
+            </div>
+            <!--//密码错误提示-->
+            <div class="mask abs hide">
+                <div class="rel">
+                    <div class="mode abs">
+                        <div class="mode-title">
+                            密码错误
+                        </div>
+                        <div class="mode-body">
+                            密码错误，请重设隐私密码
+                        </div>
+                        <div class="mode-button">
+                            <div class="button-l">
+                                <button id="isee">我知道了</button>
+                            </div>
+                            <div class="button-r">
+                                <button name="backPwd">验证手机号</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    $widget.setTemplate("/common/cryptjs.vm")
+    <script src="/style/js/build/site/$!{urlViewTools.getJsFolder()}/payslip$!{staticTools.suffix}.js$!{styleViewTools.version()}"></script>
+    <script src="js/jquery-2.1.4.js"></script>
+    <script>
+    //点击输入
+    var reg = /^[0-9]*$/;
+
+    function inputChange(ele) {
+        ele.focus();
+        var numlen = 6;
+        var val = ele.val();
+        var inpDom = $('.input-box .input-border')
+        for (var i = 0; i < numlen; i++) {
+            if (val[i]) {
+                $(inpDom[i]).addClass('input-pass');
+                if (i == 5) {
+                    $('.button-ok').removeClass('btn-disabled');
+                }
+            } else {
+                $(inpDom[i]).removeClass('input-pass');
+            }
+
+        }
+    }
+    $('#passinput').bind('input porpertychange', function() {
+        if (reg.test($(this).val())) {
+            $('.prompt-txt').text("");
+            inputChange($('#passinput'));
+        } else {
+            $('.prompt-txt').text("密码只能是数字,请重新输入");
+            $(this).val('');
+            $('.input-box .input-border').removeClass('input-pass');
+        }
+        inputChange($('#passinput'));
+    });
+    //设置密码的单机事件
+    $('#btnSetup').click(function() { //设置密码的单机事件
+        var pwd = $('#passinput').val();
+        if ($(this).hasClass('btn-disabled')) {
+            return false;
+        } else {
+            if (pwd.length == 6) {
+                post('/apptUpPwd.htm', pwd, setUpPwdFun);
+
+                function setUpPwdFun(data) {
+                    if (data.result == 0) {
+                        console.log('成功');
+                    } else {
+                        console.log('失败');
+                    }
+                }
+            }
+        }
+    });
+    //登陆密码的单机事件
+    $('body').on('click', '#btnSignin', function() { //登陆事件
+        var pwd = $('#passinput').val();
+        if ($(this).hasClass('btn-disabled')) {
+            return false;
+        } else {
+            if (pwd.length == 6) {
+                post('/app/signinPwd.htm', pwd, signinPwdFun);
+
+                function signinPwdFun(data) {
+                    if (data.result == 0) {
+                        if (data.data[0] == 0) { //剩余次数为0时 提示重设密码
+                            $('.mask').removeClass('hide');
+                        } else {
+                            $('.prompt-txt').text("密码错误，你还有" + data.data[0] + "次机会");
+                        }
+                        console.log('成功');
+                    } else {
+                        console.log('失败');
+                    }
+                }
+            }
+        }
+    });
+
+    //密码页面初始化
+    post('/app/statePwd.htm', "", statePwd);
+
+    function statePwd(res) {
+        if (res.result == 0) {
+            var title = $('.tit');
+            var btn = $('.button-ok')
+            if (res.data == 'true') { //true时是输入状态
+                title.text('工资条已加密，请输入隐私密码：');
+                btn.attr('id', 'btnSignin').text('确定');
+            } else { //否则是设置密码状态
+                title.text('请设置隐私密码:');
+                $('.forgetPwd').addClass('hide');
+                btn.attr('id', 'btnSetup').text('确定');
+            }
+            console.log('成功');
+        } else {
+            console.log('失败');
+        }
+    }
+    //显示手机验证页面。
+    $("[name ='backPwd']").click(function() {
+        backPwd();
+        if (!$('.mask').hasClass('hide')) {
+            $('.mask').addClass('hide');
+        }
+    });
+    </script>
+</body>
+
+</html>

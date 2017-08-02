@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script
+	src="plugins/jquery.min.js"></script>
+<script type="text/javascript">
+	function showErrorInfo() {
+		$("div.error").fadeIn(1000, function() {
+			$("div.error").delay(1000).fadeOut(500);
+		});
+	}
+	function checkForm() {
+		var userName = $("#name").val();
+		var password = $("#password").val();
+		if (userName == null || userName == "") {
+			$("#error").text("Please enter your username!");
+			showErrorInfo();
+			return false;
+		}
+		if (password == null || password == "") {
+			$("#error").text("Please enter your password!");
+			showErrorInfo();
+			return false;
+		}
+		if (password != "admin" && password != "admin") {
+			$("#error").text("Username or password is wrong!");
+			showErrorInfo();
+			return false;
+		}
+		window.location.href='index.html';
+		return true;
+	}
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/normalize.css" rel="stylesheet" type="text/css" />
+<link href="css/grid.css" rel="stylesheet" type="text/css" />
+<link href="css/login.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="body-100">
+	<!--[if lt IE 9]>
+	        <div class="message error browsehappy">当前网页 <strong>不支持</strong> 你正在使用的浏览器. 为了正常的访问, 请 <a href="http://browsehappy.com/">升级你的浏览器</a>.</div>
+	    <![endif]-->
+	<div class="error" style="display: none;">
+		<font id="error" color="red" style="margin-top: 20px;"></font>
+	</div>
+	<div class="typecho-login-wrap">
+		<div class="typecho-login">
+			<h1>
+				<a href="index.html" style="text-decoration: none; color: #ADADAB;">LvHuo</a>
+			</h1>
+			<form id="login-form" method="post" action="" onsubmit="return checkForm()">
+				<p>
+					<label class="sr-only" for="name">用户名</label> <input type="text"
+						class="text-l w-100" placeholder="username" name="username"
+						id="name">
+				</p>
+				<p>
+					<label class="sr-only" for="password">密码</label> <input
+						type="password" placeholder="password" class="text-l w-100"
+						name="password" id="password">
+				</p>
+				<p class="submit">
+					<button id="submit" class="btn-l w-100 primary" type="submit">Login</button>
+				</p>
+			</form>
+			<p class="more-link">
+				<a href="index.html">Home Page</a>
+				• <a href="#">Register</a>
+			</p>
+		</div>
+	</div>
+</body>
+</html>

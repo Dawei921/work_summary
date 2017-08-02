@@ -1,0 +1,1 @@
+在img中加上display:block;

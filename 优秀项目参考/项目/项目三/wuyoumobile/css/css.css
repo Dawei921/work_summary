@@ -1,0 +1,23 @@
+$(document).ready(function() {
+$(".car_dong_down").find("a").mouseover(function() {
+    var ff=$(this) 
+    if(ff.hasClass("hd")) {
+        return
+    }else {
+        ff.addClass("hd").siblings().removeClass("hd");
+        hhh(ff.index());
+    }
+}); 
+function hhh(mun) {
+    var tl=mun * 55;
+    var dg=mun * 360;
+    $(".car_dong_top").css( {
+        "transform": "translate(" + tl +"px,0)"
+    }
+    );
+    $(".car_dong_top .luntai_one").css( {
+        "transform": "rotate("+ dg +"deg)"
+    })
+    $(".car_dong_top .luntai_two").css( {
+        "transform": "rotate("+ dg +"deg)"
+    })

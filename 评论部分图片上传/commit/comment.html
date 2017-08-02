@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="applicable-device" content="mobile" />
+    <!-- 移动端 浏览器中页面将以原始大小显示，不允许缩放 -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <!-- iphone会把一串数字识别为电话号码，点击的时候会提示是否呼叫，屏蔽这功能则把telephone设置为no -->
+    <meta content="telephone=no" name="format-detection" />
+    <!-- iphone的私有标签，默认值为default（白色），可以定为black（黑色）和black-translucent（灰色半透明） -->
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <!-- iphone设备的是有标签 允许全屏模式浏览，隐藏浏览器导航栏 -->
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <!-- 全屏显示 -->
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- 屏蔽百度转码 -->
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <title>发表评论</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <!-- 监听rem js 优先加载 -->
+    <script type="text/javascript" src="js/common.js"></script>
+    <!-- 基于jquery库 优先加载 -->
+    <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+    <!--商城发表评论css和js部分-->
+    <link rel="stylesheet" href="css/comment.css" />
+    <script type="text/javascript" src="js/comment.js"></script>
+    <!--加载uploadify部分-->
+    <link rel="stylesheet" href="uploadify/Huploadify.css" />
+    <script type="text/javascript" src="uploadify/jquery.Huploadify.js"></script>
+</head>
+
+<body>
+    <div id="comment">
+    	<!-- 商品评价部分 -->
+        <div class="main productComit">
+            <!--头部 商品、星级-->
+            <div class="main-top">
+                <div class="descript">
+                    <div class="pic">
+                        <img src="http://yymx-imgstore.oss-cn-shanghai.aliyuncs.com/Public/Uploads/201704285902fed58162b.JPG" alt="诱诱美鲜" />
+                    </div>
+                    <div class="word">
+                        <span>商品描述</span>
+                    </div>
+                    <div class="star-detail">
+                        <ul class="star">
+                            <li><img src="img/star1.png" /></li>
+                            <li><img src="img/star1.png" /></li>
+                            <li><img src="img/star1.png" /></li>
+                            <li><img src="img/star1.png" /></li>
+                            <li><img src="img/star1.png" /></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--用户评论-->
+            <div class="detail">
+                <textarea name="text" maxlength="240" placeholder="快告诉小伙伴们宝贝有多好，大家都等着您的使用心得呢，分享给想买的小伙伴们" onblur="if(placeholder=='') placeholder='快告诉小伙伴们宝贝有多好，大家都等着您的使用心得呢，分享给想买的小伙伴们'" onfocus="placeholder=''"></textarea>
+            </div>
+            <!--用户拍图-->
+            <div class="detail-pic">
+                <div id="upload" class="pic" >
+                    <p><img src="img/add.png" alt="add" /></p>
+                    <span>添加照片</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="main productComit">
+            <!--头部 商品、星级-->
+            <div class="main-top">
+                <div class="descript">
+                    <div class="pic">
+                        <img src="http://yymx-imgstore.oss-cn-shanghai.aliyuncs.com/Public/Uploads/201704285902fed58162b.JPG" alt="诱诱美鲜" />
+                    </div>
+                    <div class="word">
+                        <span>商品描述</span>
+                    </div>
+                    <div class="star-detail">
+                        <ul class="star">
+                            <li><img src="img/star1.png" /></li>
+                            <li><img src="img/star1.png" /></li>
+                            <li><img src="img/star1.png" /></li>
+                            <li><img src="img/star1.png" /></li>
+                            <li><img src="img/star1.png" /></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--用户评论-->
+            <div class="detail">
+                <textarea name="text" maxlength="240" placeholder="快告诉小伙伴们宝贝有多好，大家都等着您的使用心得呢，分享给想买的小伙伴们" onblur="if(placeholder=='') placeholder='快告诉小伙伴们宝贝有多好，大家都等着您的使用心得呢，分享给想买的小伙伴们'" onfocus="placeholder=''"></textarea>
+            </div>
+            <!--用户拍图-->
+            <div class="detail-pic">
+                <div id="upload2" class="pic">
+                    <p><img src="img/add.png" alt="add" /></p>
+                    <span>添加照片</span>
+                </div>
+            </div>
+        </div>
+        <!--配送服务评价-->
+        <div class="main sendComit">
+            <!--头部 商品、星级-->
+            <div class="main-top">
+                <div class="descript">
+                    <div class="word">
+                        <span>配送服务</span>
+                    </div>
+                    <div class="star-detail ">
+                        <ul class="sendStar star">
+                            <li><img src="img/star1.png" /></li>
+                            <li><img src="img/star1.png" /></li>
+                            <li><img src="img/star1.png" /></li>
+                            <li><img src="img/star1.png" /></li>
+                            <li><img src="img/star1.png" /></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--用户评论-->
+            <div class="detail">
+                <textarea name="text" maxlength="240" placeholder="说说对我们送货小哥的建议" onblur="if(placeholder=='') placeholder='说说对我们送货小哥的建议'" onfocus="placeholder=''"></textarea>
+            </div>
+        </div>
+        <!--提交按钮-->
+        <div class="commit">
+            <button class="commitbtn">发表评价</button>
+        </div>
+    </div>
+</body>
+
+</html>

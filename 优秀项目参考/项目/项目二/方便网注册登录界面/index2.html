@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/style2.css" />
+		 <script src="js/js.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<div id="denglufirst" class="stop" onclick="backbegin()"></div>
+		<div class="public-top ">
+			<div class="w1200">
+				<img src="images/logo.png" alt="" /><img src="images/logo1.png" alt="" />
+			</div>
+		</div>
+		<!--注册会员-->
+		<div class="public-main w1200">
+			<div class="zhuce-logo">
+				<span>注册会员</span>
+				<span>我已经注册，现在就<a onclick="DengLu()" class="addyanshidenglu">登录</a></span>
+			</div>
+			<div class="information">
+				<div class="progress">
+					<p>填写注册信息</p>
+					<p>接受并填写手机验证码</p>
+					<p>注册成功</p>
+				</div>
+				<div class="progress-img">
+					<img src="images/regis1.png" alt="" />
+					<img src="images/regis2.png" alt="" />
+					<img src="images/regis4.png" alt="" />
+				</div>
+				<div class="yanzheng">
+					<div class="message">
+						<div class="left">
+							<!--方便网已经向您的手机-->
+							<div class="left-top">
+								<p>方便网已经向您的手机<span>18751903861</span>发送了注册验证码</p>
+								<p>验证码<input type="text" id="sureCheckbox" value="" placeholder="默认123"/></p>
+								<form action="index3.html" id="sureck" onsubmit="return checkSubmit()">
+									<input  class="checksubmit" type="submit"  value="确认并提交注册"   id="sureCheckbox"> 
+								</form>
+								<p class="dash"></p>
+							</div>
+							<!--没有收到验证码，请重新申请验证码：-->
+							<div class="left-bottom">
+								<p>没有收到验证码，请重新申请验证码：</p>
+								<button onclick="sendyzm()" id="daojishi">点击重新发送</button>
+							</div>
+						</div>
+						<div class="right">
+							<img src="images/webchat.png" alt="">
+							<img src="images/text.png" alt="">
+							<img src="images/regis6.png" alt="">
+						</div>
+					</div>
+					<div class="problem">
+						<img src="images/problem.jpg" alt="">	
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 底部 -->
+		<div class="public-bottom ">
+		    <div class="w1200">
+		        <p>关于我们</p>
+		        <p>免责声明</p>
+		        <p>常见问题</p>
+		        <p>联系我们</p>
+		        <p>人才招聘</p>
+		    </div>
+		    <div class="last">
+		        <p>Copyright@&nbsp;2013-2016|苏ICP备12063525号－4&nbsp;苏州乐卡网络科技有限公司</p>
+		    </div>
+		</div>
+	<!-- 登录样式 -->
+		<div class="denglu" style="display:none" id="DengLu">
+		<!-- 账号登录 -->
+			<div class="passworddenglu" style="display:none" id="passwordnglu">
+				<div class="denglutag">
+					<span >密码登录</span>
+					<span onclick="show('right')">手机验证码登录</span>
+				
+				</div>
+				<form action="" class="xinxi">
+					<p><input type="text" placeholder="手机号" class="shoujihao"></p>
+					<p><input type="password" vlaue="密码" class="mima" placeholder="密码"></p>
+					<p class="fx"><input type="checkbox" class="fuxuan">自动登录 <a href="" >忘记密码？</a></p>
+					<input type="button" value="登录" class="denglu-button">
+				</form>
+				<p class="shifohy">还不是方便网会员？<a href="index.html">免费注册</a></p>
+			</div>
+			<!-- 手机登录 -->
+			<div class="phonedenglu" style="display:none" id="shoujidenglu">
+				<div class="denglutag">
+					<span href="#" onclick="show('left')">密码登录</span>
+					<span href="#">手机验证码登录</span>
+				
+				</div>
+				<form action="" class="xinxi">
+					<p><input type="text" placeholder="手机号" class="shoujihao"></p>
+					<p><input type="text" id="yz34"><img src="images/icon32.png" alt="" class="icon32"><span>看不清？，<a href="" class="changeicon">换一张</a></span></p>
+					<p><input type="text" placeholder="手机验证码" class="shoujiyzm"> <input type="button" value="获取手机验证码" class="getyzm"></p>
+					<input type="button" value="登录" class="denglu-button">
+				</form>
+				<p class="shifohy">还不是方便网会员？<a href="">免费注册</a></p>
+			</div>
+		</div>
+	</body>
+</html>

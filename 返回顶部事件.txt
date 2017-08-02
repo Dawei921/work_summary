@@ -1,0 +1,6 @@
+//返回顶部按钮事件
+    $('.back-top-btn').click(function() {
+        $(".weui_tab_bd").animate({
+            scrollTop: 0
+        }, 400);
+    });

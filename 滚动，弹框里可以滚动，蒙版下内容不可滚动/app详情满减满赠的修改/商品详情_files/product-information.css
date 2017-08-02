@@ -1,0 +1,596 @@
+.add-masking {
+    background-color: rgba(0, 0, 0, .8);
+    opacity: .7;
+    position: fixed;
+    z-index: 888;
+    width: 100%;
+    height: 100%;
+    transition: .6s
+}
+
+body {
+    background: #f2f4f8
+}
+
+header {
+    height: .88rem;
+    display: flex;
+    background: #fff
+}
+
+header .head-c-left {
+    line-height: .88rem;
+    flex: 1
+}
+
+header .head-c-left a {
+    margin-left: .3rem
+}
+
+header .head-c-left a img {
+    width: .18rem;
+    height: .34rem;
+    vertical-align: middle
+}
+
+header h1 {
+    flex: 10;
+    text-align: center;
+    max-width: 50%;
+    font-size: .36rem;
+    height: .88rem;
+    color: #333;
+    font-weight: 500;
+    white-space: nowrap;
+    line-height: .88rem;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+header .head-c-right {
+    flex: 1;
+    position: relative
+}
+
+header .head-c-right a {
+    position: absolute;
+    right: .3rem;
+    top: 50%;
+    margin-top: -.23rem
+}
+
+header .head-c-right a img {
+    width: .46rem
+}
+
+.main-content .main-c-pic img {
+    width: 7.5rem;
+    height: 7.5rem
+}
+
+.main-content .main-c-pic .swiper-wrapper .swiper-slide {
+    width: 7.5rem;
+    height: 7.5rem;
+    background-image: url('../image/bgspace.png');
+    background-size: 7.5rem 7.5rem;
+}
+
+.main-content .main-c-pic .swiper-wrapper .swiper-slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.main-content .main-c-introduce {
+    padding-top: .3rem;
+    padding-left: .3rem;
+    background: #fff
+}
+
+.main-content .main-c-introduce h1 {
+    font-size: .32rem;
+    color: #333;
+    /*     height: .8rem;
+line-height: .4rem; */
+    font-weight: 400;
+    width: 6.7rem;
+    text-overflow: -o-ellipsis-lastline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical
+}
+
+.main-content .main-c-introduce .main-c-intro-center {
+    display: block;
+    width: 6.7rem;
+    font-size: .26rem;
+    color: #999;
+    margin-top: .1rem
+}
+.main-content .main-c-introduce .main-c-intro-time {
+   font-size: 0.3rem;
+   color:#333333;
+   margin-top: 0.2rem;
+}
+.main-content .main-c-introduce .main-c-intro-bottom {
+    width: 96%;
+    margin-top: .1rem;
+    display: flex;
+    padding-bottom: .5rem
+}
+
+.specleft {
+    font-size: 0.24rem;
+}
+.sale{
+    font-size: 0.3rem;
+    display: flex;
+    padding-top:0.3rem;
+    padding-bottom: 0.3rem;
+    border-top: 1px solid #eeeeee;
+}
+.sale .saleTile{
+    color:#999999;
+    margin-right: 0.2rem;
+}
+.sale>ul{
+    width: 76%;
+}
+.sale>ul>li{
+    padding-right: 0.4rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    margin-bottom: 0.1rem;
+}
+.sale ul>li>span:first-child{
+    font-size: 0.2rem;
+    color:#F08200;
+    display: inline-block;
+    border:1px solid #F08200;
+    padding:0px 0.1rem;
+    border-radius: 3px;
+}
+.sale>ul>li>span:last-child{
+    color:#666666;
+    font-size: 0.25rem;
+}
+.sale .saleDetail{
+    width: 10%;
+}
+.sale .saleDetail span{
+    background: #AFAFAF;
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 6px;
+}
+.main-content .main-c-introduce .main-c-intro-bottom p {
+    // width:25%;
+    font-size: .29rem;
+    color: #f08200;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+
+.main-content .main-c-introduce .main-c-intro-bottom p span:last-child {
+    margin-left: 4px;
+    font-size: .26rem
+}
+
+.main-content .main-c-introduce .main-c-intro-bottom p:last-child {
+    padding-top: .08rem;
+    // font-size: .26rem;
+    color: #F08200;
+    width: 100%;
+}
+
+.main-content .main-pic-detail {
+    background: #fff;
+    margin-top: .2rem;
+}
+
+.main-content .main-pic-detail h1 {
+    padding-left: .3rem;
+    height: .8rem;
+    line-height: .8rem;
+    font-size: .3rem;
+    color: #333;
+}
+
+.main-content .main-pic-detail .main-p-i-audio .main-p-i-audio {
+    overflow: hidden;
+    position: relative;
+    height: 4rem;
+}
+
+#video1 {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.main-content .main-pic-detail .main-p-i-audio .control-video {
+    position: relative;
+    width: 100%;
+    height: 4rem;
+}
+
+.main-content .main-pic-detail .main-p-i-audio .control-video img {
+    width: 100%;
+    height: 100%;
+}
+
+.main-content .main-pic-detail .main-p-i-audio .control-video img:last-child {
+    width: 100%;
+    height: 4rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+//最后图片部分样式
+.main-content .main-pic-last {
+    margin-bottom: 1rem;
+    width: 100%;
+    // height: 4.57rem;
+}
+
+.main-content .main-pic-last img {
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 6;
+}
+
+footer div {
+    display: flex;
+}
+
+footer div p {
+    display: inline-block;
+    text-align: center;
+    height: 1rem
+}
+
+footer div p img {
+    width: .55rem;
+    height: .44rem;
+}
+
+footer div .footer-left {
+    // flex: 2;
+    width: 33%;
+    background: #eee;
+    position: fixed;
+    bottom: 0;
+}
+
+footer div .footer-left img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -.22rem;
+    margin-left: -.27rem;
+}
+
+footer div .footer-center {
+    // flex: 4;
+    width: 67%;
+    background: #f08200;
+    color: #fff;
+    line-height: 1rem;
+    position: fixed;
+    bottom: 0;
+    left: 33%;
+}
+
+.chose-run {
+    transform: translateY(-7rem);
+    transition: .8s;
+}
+
+.chose-close {
+    transform: translateY(7rem);
+    transition: .8s;
+}
+
+.footer div .tk-lt {
+    flex: 4;
+}
+
+.footer div .tk-rt {
+    flex: 8;
+    background: #f18101;
+}
+
+.chose {
+    width: 7.5rem;
+    background: #fff;
+    position: fixed;
+    z-index: 999;
+    bottom: -7rem;
+}
+
+.chose .choose .top {
+    width: 6.9rem;
+    display: flex;
+    margin: 0 auto;
+}
+
+.chose .choose .top .choose-left {
+    position: relative;
+    width: 2rem;
+}
+
+.chose .choose .top .choose-left img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 4px;
+    position: absolute;
+    bottom: 0;
+}
+
+.chose .choose .top .choose-center {
+    padding-left: .16rem
+}
+
+.chose .choose .top .choose-center h2 {
+    font-size: .28rem;
+    max-width: 4.47rem;
+    text-overflow: -o-ellipsis-lastline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-height: .6rem;
+    margin-top: .53rem;
+    margin-right: .22rem;
+}
+
+.chose .choose .top .choose-center h3 {
+    font-size: .22rem;
+    color: #f18103;
+}
+
+.chose .choose .top .choose-right {
+    padding-left: .22rem;
+}
+
+.chose .choose .top .choose-right img {
+    width: .22rem;
+    height: .22rem;
+}
+
+.chose .choose .quarity {
+    width: 6.9rem;
+    margin: 0 auto;
+}
+
+.chose .choose .quarity h2 {
+    font-size: .3rem;
+    margin-top: .5rem;
+    margin-bottom: .3rem
+}
+
+.chose .choose .quarity ul {
+    display: flex;
+    justify-content: space-between
+}
+
+.chose .choose .quarity ul li {
+    width: 1.4rem;
+    height: .56rem;
+    line-height: .56rem;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+    color: #333;
+    padding-left: .09rem;
+    padding-right: .09rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1
+}
+
+.chose .choose .quarity-li-click {
+    border: 2px solid #f18200!important;
+    color: #f18200!important
+}
+
+.chose .choose .number {
+    padding-top: .6rem;
+    padding-bottom: .8rem;
+    display: flex;
+    width: 6.9rem;
+    margin: 0 auto
+}
+
+.chose .choose .number span {
+    display: inline-block;
+    flex: 2;
+    height: .6rem
+}
+
+.chose .choose .number div {
+    flex: 1;
+    text-align: right;
+    height: .6rem;
+    position: relative
+}
+
+.chose .choose .number div .number-change {
+    border: 1px solid #999;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    overflow: hidden
+}
+
+.chose .choose .number div .number-change a,
+.chose .choose .number div .number-change span {
+    display: inline-block;
+    width: .6rem;
+    height: .6rem;
+    padding-left: 0;
+    text-align: center;
+    line-height: .54rem;
+}
+
+.chose .choose .number div .number-change .reduce {
+    border-right: 1px solid #ccc;
+}
+
+.chose .choose .number div .number-change .add {
+    border-left: 1px solid #ccc;
+}
+
+.chose .choose .footer {
+    width: 7.5rem;
+}
+
+.chose .choose .footer div {
+    display: flex;
+}
+
+.chose .choose .footer div a {
+    display: inline-block;
+    text-align: center;
+    height: 1rem;
+}
+
+.chose .choose .footer div a img {
+    width: .55rem;
+    height: .44rem;
+}
+
+.chose .choose .footer div .footer-left {
+    flex: 1;
+    background: #eee;
+    position: relative;
+}
+
+.chose .choose .footer div .footer-left img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -.22rem;
+    margin-left: -.27rem;
+    width: .55rem;
+    height: .44rem;
+}
+
+.chose .choose .footer div .footer-right {
+    flex: 4;
+    background: #f08200;
+    color: #fff;
+    line-height: 0.8rem;
+    text-align: center;
+}
+
+.stopMove {
+    overflow: hidden;
+}
+
+.swiper-pagination-bullet-active {
+    background: #f08200;
+}
+
+.main-c-intro-num {
+    font-size: 0.7rem;
+}
+
+.number-right {
+    text-align: right;
+    float: right;
+    color: #666;
+}
+
+.main-c-intro-num2 {
+    font-size: 0.21rem;
+    color: #666;
+    text-decoration: line-through;
+}
+
+.specright {
+    font-size: 0.21rem;
+    color: #666;
+    text-decoration: line-through;
+}
+.menban{
+    display: none;
+}
+.sale_toast{
+    position: fixed;
+    z-index: 999;
+    top:50%;
+    margin-top: -2.5rem;
+    width: 80%;
+    left:10%;
+    height: 5rem;
+    background: #fff;
+    border-radius: 10px;
+}
+.sale_title{
+    position: relative;
+    height: 1.3rem;
+    overflow: auto;
+}
+.sale_title div{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color:#333333;
+    font-size: 0.5rem;
+    line-height: 1.3rem;
+}
+.sale_title p{
+    position: absolute;
+    right: 0.3rem;
+    top:0.35rem;
+    width: 0.5rem;
+    height: 0.5rem;
+}
+.sale_title p img{
+    width: 100%;
+    height: 100%;
+}
+#gundong{
+    max-height: 3.5rem;
+    overflow: auto;
+    
+}
+.sale_main{
+    padding-left: 1.8em;
+    padding-right: 1.8em;
+}
+.sale_main>div{
+     margin-bottom: 1em;
+}
+.sale_main div span:nth-child(1) {
+    font-size: 0.32rem;
+    color: #F08200;
+    padding: 0 0.15rem;
+    border-radius: 5px;
+    border: 1px solid #f08200;
+    display: inline-block;
+   
+}
+.sale_main div span:nth-child(2) {
+    font-size: 0.3rem;
+    color: #666666;
+}

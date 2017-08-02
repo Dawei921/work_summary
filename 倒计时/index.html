@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>抢购</title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <p>
+        <span>距结束：</span><span class="hour">13</span>时<span class="minute">50</span>分<span class="second">25</span>秒
+    </p>
+    <script src="jquery-1.9.0.js"></script>
+    <script>
+    var hour = $('.hour').html();
+    var minute = $('.minute').html();
+    var second = $('.second').html();
+    $(function() {
+        setTime(hour, minute, second);
+    });
+
+    /*自定义倒计时控件--David-gao*/
+    var setTime = function(hour, minute, second) {
+        var interval = setInterval(function() {
+            if (second == 0) {
+                //当秒为0时，判断时分是否为0,假如都为0则都置零
+                if (hour == 0 && minute == 0) {
+                    second = 0;
+                    clearInterval(interval);
+                } else { //否则让秒为59，
+                    second = 59;
+                    if (minute == 0) { //当分为0时
+                        if (hour == 0) { //时为0，则分为0
+                            minute = 0;
+                        } else { //否则分为59
+                            minute = 59;
+                            hour--; //时减小
+                            if (hour == 0) {
+                                hour = 0;
+                            }
+                        }
+                    } else {
+                        minute--;
+                    }
+                }
+            } else {
+                second--;
+            }
+            $('.second').html(second);
+            $('.minute').html(minute);
+            $('.hour').html(hour);
+        }, 1000);
+    };
+    </script>
+</body>
+
+</html>

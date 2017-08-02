@@ -1,0 +1,6 @@
+ .setPwd{
+                -webkit-text-security:disc;
+                text-security:disc; /*使用指定形状代替文字显示 circle圆圈 disc 圆形 square 正方形*/
+            }
+
+<input type="tel">

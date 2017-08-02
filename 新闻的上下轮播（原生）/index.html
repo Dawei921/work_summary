@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>上下轮播</title>
+	<link rel="stylesheet" href="css/common.css">
+	<script src="js/common.js"></script>
+	<script src="js/jquery-1.9.0.js"></script>
+	<style>
+		.headNewsSlide{
+			width: 7.5rem;
+			display: flex;
+			position: relative;
+		}
+		.headNewsSlide>p{
+			height: 0.85rem;
+		}
+		.headNewsSlide>p img{
+			width: 1.48rem;
+			height: 0.35rem;
+			margin-left: 0.22rem;
+			margin-top: 0.27rem;
+		}
+		.headNewsSlide ul{
+			height: 0.4rem;
+			overflow: hidden;
+			position: absolute;
+			top: 50%;
+			margin-top: -0.2rem;
+			left: 1.8rem;
+		}
+	</style>
+</head>
+<body>
+	<section class="headNewsSlide">
+		<p><img src="images/text_btn1.png" alt=""></p>
+		<ul class="headNewsList">
+			<li class="one">
+				<a href="javascript:;">我是测试一我是测试一我是测试一</a>
+			</li>
+			<li class="two">
+				<a href="javascript:;">我是测试二我是测试二我是测试二</a>
+			</li>
+			<li class="three">
+				<a href="javascript:;">我是测试三我是测试三我是测试三</a>
+			</li>
+			<li class="four">
+				<a href="javascript:;">我是测试四我是测试四我是测试四</a>
+			</li>
+			<li class="five">
+				<a href="javascript:;">我是测试五我是测试五我是测试五</a>
+			</li>
+		</ul>
+	</section>
+
+	<script>
+		$(function(){
+		//	头条上滑动
+		//理解：让第一个Li向上滑动后，让他位置还原，不过通过appendTo让他位置到ul中的最后一个去
+		function moveup(){
+			$(".headNewsSlide li:first").animate({
+				"margin-top":"-0.3rem",
+			},300,function(){
+				$(this).css("margin-top",'0').appendTo($('.headNewsList'));
+			})
+		}
+
+		var timer = setInterval(moveup,2000);
+		//	当鼠标移入的时候清楚定时器
+		$('.headNewsList li').hover(function(){
+			clearInterval(timer);
+		},function(){
+			timer = setInterval(moveup,2000);
+		})
+
+
+
+
+
+
+
+
+
+
+
+
+
+		})
+	</script>
+</body>
+</html>

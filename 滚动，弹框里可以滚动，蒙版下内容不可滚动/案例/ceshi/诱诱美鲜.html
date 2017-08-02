@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)http://m.yymx520.com/Shop/Order/commitOrderConfirm -->
+<html class="pixel-ratio-3 retina ios ios-9 ios-9-1 ios-gt-8 ios-gt-7 ios-gt-6">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>诱诱美鲜</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="诱诱美鲜">
+    <link rel="stylesheet" href="./诱诱美鲜_files/weui.min.css">
+    <link rel="stylesheet" href="./诱诱美鲜_files/jquery-weui.css">
+    <!--    <link rel="stylesheet" href="//cdn.bootcss.com/weui/0.4.3/style/weui.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/jquery-weui/0.8.2/css/jquery-weui.min.css"> -->
+    <link rel="stylesheet" href="./诱诱美鲜_files/tankuang.css">
+    <link rel="stylesheet" href="./诱诱美鲜_files/fapiao.css">
+    <!--     <link rel="stylesheet" href="/Public/Shop/css/coupon.css"> -->
+    <link rel="stylesheet" href="Orderpage.css">
+    <meta name="__hash__" content="0551461b4c17cdd05f60c8d75ba45a21_ab7e190a917bde54a7f1674bd52031cb">
+</head>
+
+<body ontouchstart="">
+    <!-- 蒙版 -->
+    <!--  <div class="masking3" style="position: absolute;top:0;left:0;width:100%;height:100%;background: #cccccc;z-index: 9999;opacity:0.5">
+           
+       </div> -->
+    <form id="commit_order_form" method="post">
+        <div class="weui_tab">
+            <div class="weui_navbar">
+                <div class="weui-row weui-no-gutter" style="width:100%;text-align:center;border-bottom:1px solid #EDEDED;">
+                    <div class="top">
+                        <div class="top-back">
+                            <a href="http://m.yymx520.com/Shop/Cart.html">
+                                <img src="./诱诱美鲜_files/back@2x.png" height="16px" ;width="8px">
+                            </a>
+                        </div>
+                        <div class="top-title">
+                            <p><span>订单页面</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="weui_tab_bd">
+                <div class="order-panel">
+                    <a href="javascript:;" onclick="select_address()">
+                        <div class="address-info">
+                            <div class="left-info">送至</div>
+                            <div class="address-detail">
+                                <div class="address-detail-member"><span>高成伟</span> <span>18751903861</span></div>
+                                <div class="address-detail-info"><span class="address-type">家庭</span>江苏 南京 秦淮区 夫子庙街道 白露小区635号13室 可结局屠龙李金红哦了老K就咯空军建军节啦咯啦咯啦咯空军建军节空军建军节咯哦了啦</div>
+                            </div>
+                            <div class="address-right-arrow">
+                                <img src="./诱诱美鲜_files/right.png">
+                            </div>
+                            <input type="hidden" name="receiving_info_id" value="148">
+                        </div>
+                    </a>
+                    <!--  <div class="right-arrow-item" onclick="openDaySelect()">
+            <div class="right-arrow-item-text">送货时间&nbsp;&nbsp;</div>
+            <div class="right-arrow-item-text"><input style="color:#F08200;min-width:10rem;" class="weui_input" id="time3" type="text"></div>
+            <div class="right-arrow-item-arrow">
+              <img src="../../Public/Common/img/right.png"></img>
+            </div>
+          </div> -->
+                    <div class="weui_cells weui_cells_form" style="border-bottom: 1px solid #EDEDED">
+                        <div class="weui_cell weui_cell_switch">
+                            <div class="weui_cell_hd weui_cell_primary">打印价格</div>
+                            <div class="weui_cell_ft">
+                                <input class="weui_switch i_price" type="checkbox" checked="checked">
+                            </div>
+                        </div>
+                    </div>
+                    <!--  <div class="order-info-title">发票信息</div>
+          <div class="discount-info">
+            <div class="right-arrow-item" onclick="invoice();">
+            
+              <div class="right-arrow-item-text-img"><img src="../../Public/Common/img/discount-card.png"></img></div>
+             
+              <div class="right-arrow-item-text">发票信息</div>
+              <div class="right-arrow-item-arrow">
+                <img src="/Public/Common/img/right.png"></img>
+              </div>
+            </div>
+          </div> -->
+                    <div class="weui_cells weui_cells_form" style="border-bottom: 1px solid #EDEDED">
+                        <div class="weui_cell weui_cell_switch">
+                            <div class="weui_cell_hd weui_cell_primary">打印发票</div>
+                            <div class="weui_cell_ft">
+                                <input class="weui_switch i_invoice" type="checkbox">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-info-title">商品信息</div>
+                    <div class="goods-list">
+                        <div class="goods-item">
+                            <div class="goods-img"><img src="./诱诱美鲜_files/201705155918f9b59f596.jpg"></div>
+                            <div class="goods-info">
+                                <div class="goods-name">【大连】黄油桃</div>
+                                <div class="goods-spec">规格： 个：1个 </div>
+                                <div class="goods-price"> ¥ 14.80 </div>
+                            </div>
+                            <div class="goods-count">x <span>1</span></div>
+                        </div>
+                        <div class="goods-item">
+                            <div class="goods-img"><img src="./诱诱美鲜_files/201705155918f9b59f596.jpg"></div>
+                            <div class="goods-info">
+                                <div class="goods-name">【大连】黄油桃</div>
+                                <div class="goods-spec">规格： 个：10个 </div>
+                                <div class="goods-price"> ¥ 138.00 </div>
+                            </div>
+                            <div class="goods-count">x <span>1</span></div>
+                        </div>
+                        <div class="goods-item">
+                            <div class="goods-img"><img src="./诱诱美鲜_files/2017051259154a2699669.jpg"></div>
+                            <div class="goods-info">
+                                <div class="goods-name">【苏州】东山白玉枇杷</div>
+                                <div class="goods-spec">规格： 箱：整箱5斤，净果4.6斤 </div>
+                                <div class="goods-price"> ¥ 178.00 </div>
+                            </div>
+                            <div class="goods-count">x <span>2</span></div>
+                        </div>
+                    </div>
+                    <div class="total-price-panel" style="background-color: #fff; line-height:1.5em;">
+                        <div>
+                            <!--总价-->
+                            <div class="total-price"><span>商品总额</span></div>
+                            <div class="total-price-details"><span>¥  508.80</span></div>
+                        </div>
+                        <div>
+                            <!--优惠-->
+                            <div class="discount"><span>会员折扣金额</span></div>
+                            <div class="discount-details"><span>¥  0.00</span></div>
+                        </div>
+                        <div>
+                            <!--运费-->
+                            <div class="freight">运费<span class="freight-l">（满88元免运费）</span></div>
+                            <div class="freight-details"><span>¥  0.00</span></div>
+                        </div>
+                    </div>
+                    <div class="order-info-title">优惠 &amp; 折扣</div>
+                    <div class="discount-info">
+                        <div class="right-arrow-item" onclick="openDiscountCard();">
+                            <!--
+              <div class="right-arrow-item-text-img"><img src="../../Public/Common/img/discount-card.png"></img></div>
+              -->
+                            <div class="right-arrow-item-text">优惠券</div>
+                            <!-- 添加优惠券 -->
+                            <div class="youhuinumber"><span>2张可用</span></div>
+                            <div class="right-arrow-item-arrow">
+                                <img src="./诱诱美鲜_files/right.png">
+                            </div>
+                        </div>
+                        <!--    <div class="right-arrow-item" onclick="openDiscountCode();">
+            
+              <div class="right-arrow-item-text-img"><img src="../../Public/Common/img/discount-code.png"></img></div>
+             
+              <div class="right-arrow-item-text">优惠码/红包口令</div>
+              <div class="right-arrow-item-arrow">
+                <img src="../../Public/Common/img/right.png"></img>
+              </div>
+            </div> -->
+                    </div>
+                    <div class="order-info-title">备注</div>
+                    <div class="weui_cells weui_cells_form">
+                        <div class="weui_cell">
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <textarea class="weui_textarea" placeholder="请输入您的特殊需求" name="account_remark" rows="3"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="peisong pstop">运费规则：</p>
+                    <p class="peisong">1.主城区(建邺、鼓楼、秦淮、雨花、玄武、栖霞，江宁诚信大道以北)满88元免配送费</p>
+                    <p class="peisong">2.诚信大道以南，仙林羊山公园以东，满200元起送</p>
+                    <p class="peisong">3.板桥、浦口200元以上5公斤内包邮顺丰，11前下单，正常情况当天送达</p>
+                    <p class="peisong">4.偏远地区，200元以上5公斤内，视水果包邮顺丰</p>
+                    <p class="peisong">5.如对上述有疑问，请及时联系微信客服（yyxg11）</p>
+                </div>
+            </div>
+            <div class="commit-order" style="position:fixed;bottom:0px;">
+                <div class="commit-order-text">实付:¥ <span>508.80</span>元<span style="font-size:0.5rem;">(优惠:¥ 0元)</span></div>
+                <div class="commit-order-btn"> <a href="javascript:;" onclick="commitOrder()">提交订单</a></div>
+            </div>
+            <input type="hidden" name="goods_compute_info" value="[&quot;1528|1|417&quot;,&quot;1529|1|417&quot;,&quot;1455|2|406&quot;]">
+            <input id="MallIdInput" type="hidden" value="">
+            <input id="is_print_price" name="is_print_price" type="hidden" value="1">
+        </div>
+        <!-- 优惠券弹出框 -->
+        <div id="discountCard" class="weui-popup-container popup-bottom weui-popup-container-visible" style="display: block;">
+            <div class="weui-popup-overlay"></div>
+            <div class="weui-popup-modal">
+                <div class="toolbar">
+                    <div class="toolbar-inner">
+                        <a href="javascript:;" class="picker-button" style="font-size:0.6rem;" onclick="selectDiscountCard();">确定</a>
+                        <a href="javascript:;" class="close_popup_discountCard close-popup">取消</a>
+                        <h1 class="title" style="font-size:0.6rem;">优惠券</h1>
+                    </div>
+                </div>
+                <div class="modal-content" style="max-height:20rem;min-height:20rem;" id="gundong">
+                    <div class="discount-detail-item-panel">
+                        <div class="discount-detail-item">
+                            <div class="discount-detail-checkbox">
+                                <span><input type="radio" class="input_check" id="discountcard72955" name="coupon" attr_coupon_id="72955" value="63"><label for="discountcard72955"></label></span>
+                            </div>
+                            <div class="discount-detail-info">
+                                <div style="line-height:1.7em;font-size:1em;color:#F08200;font-weight: bold;" class="discount72955">¥20元</div>
+                                <div style="line-height:1rem;">
+                                    <span class="rule_name63">满158可用(适用范围：箱:整箱5斤，净果4.6斤)</span>
+                                </div>
+                                <div style="float:right;height:1rem;margin-right:0.5rem;font-size:0.5rem;color:#AFAFAF;">有效期：2017-05-12 ~ 2017-05-15</div>
+                            </div>
+                            <input type="hidden" name="coupon_type" value="1">
+                            <input type="hidden" name="coupon_type_id" value="8">
+                            <input type="hidden" name="jianzeng_type" id="jianzeng_type72955" value="1">
+                            <input type="hidden" name="discount_money" id="discount_money72955" value="2000">
+                        </div>
+                        <div class="discount-detail-item">
+                            <div class="discount-detail-checkbox">
+                                <span><input type="radio" class="input_check" id="discountcard72956" name="coupon" attr_coupon_id="72956" value="63"><label for="discountcard72956"></label></span>
+                            </div>
+                            <div class="discount-detail-info">
+                                <div style="line-height:1.7em;font-size:1em;color:#F08200;font-weight: bold;" class="discount72956">¥20元</div>
+                                <div style="line-height:1rem;">
+                                    <span class="rule_name63">满158可用(适用范围：箱:整箱5斤，净果4.6斤)</span>
+                                </div>
+                                <div style="float:right;height:1rem;margin-right:0.5rem;font-size:0.5rem;color:#AFAFAF;">有效期：2017-05-12 ~ 2017-05-15</div>
+                            </div>
+                            <input type="hidden" name="coupon_type" value="1">
+                            <input type="hidden" name="coupon_type_id" value="8">
+                            <input type="hidden" name="jianzeng_type" id="jianzeng_type72956" value="1">
+                            <input type="hidden" name="discount_money" id="discount_money72956" value="2000">
+                        </div>
+                        <div class="discount-detail-item">
+                            <div class="discount-detail-checkbox">
+                                <span><input type="radio" class="input_check" id="discountcard72956" name="coupon" attr_coupon_id="72956" value="63"><label for="discountcard72956"></label></span>
+                            </div>
+                            <div class="discount-detail-info">
+                                <div style="line-height:1.7em;font-size:1em;color:#F08200;font-weight: bold;" class="discount72956">¥20元</div>
+                                <div style="line-height:1rem;">
+                                    <span class="rule_name63">满158可用(适用范围：箱:整箱5斤，净果4.6斤)</span>
+                                </div>
+                                <div style="float:right;height:1rem;margin-right:0.5rem;font-size:0.5rem;color:#AFAFAF;">有效期：2017-05-12 ~ 2017-05-15</div>
+                            </div>
+                            <input type="hidden" name="coupon_type" value="1">
+                            <input type="hidden" name="coupon_type_id" value="8">
+                            <input type="hidden" name="jianzeng_type" id="jianzeng_type72956" value="1">
+                            <input type="hidden" name="discount_money" id="discount_money72956" value="2000">
+                        </div>
+                        <div class="discount-detail-item">
+                            <div class="discount-detail-checkbox">
+                                <span><input type="radio" class="input_check" id="discountcard72956" name="coupon" attr_coupon_id="72956" value="63"><label for="discountcard72956"></label></span>
+                            </div>
+                            <div class="discount-detail-info">
+                                <div style="line-height:1.7em;font-size:1em;color:#F08200;font-weight: bold;" class="discount72956">¥20元</div>
+                                <div style="line-height:1rem;">
+                                    <span class="rule_name63">满158可用(适用范围：箱:整箱5斤，净果4.6斤)</span>
+                                </div>
+                                <div style="float:right;height:1rem;margin-right:0.5rem;font-size:0.5rem;color:#AFAFAF;">有效期：2017-05-12 ~ 2017-05-15</div>
+                            </div>
+                            <input type="hidden" name="coupon_type" value="1">
+                            <input type="hidden" name="coupon_type_id" value="8">
+                            <input type="hidden" name="jianzeng_type" id="jianzeng_type72956" value="1">
+                            <input type="hidden" name="discount_money" id="discount_money72956" value="2000">
+                        </div>
+                        <div class="discount-detail-item">
+                            <div class="discount-detail-checkbox">
+                                <span><input type="radio" class="input_check" id="discountcard72956" name="coupon" attr_coupon_id="72956" value="63"><label for="discountcard72956"></label></span>
+                            </div>
+                            <div class="discount-detail-info">
+                                <div style="line-height:1.7em;font-size:1em;color:#F08200;font-weight: bold;" class="discount72956">¥20元</div>
+                                <div style="line-height:1rem;">
+                                    <span class="rule_name63">满158可用(适用范围：箱:整箱5斤，净果4.6斤)</span>
+                                </div>
+                                <div style="float:right;height:1rem;margin-right:0.5rem;font-size:0.5rem;color:#AFAFAF;">有效期：2017-05-12 ~ 2017-05-15</div>
+                            </div>
+                            <input type="hidden" name="coupon_type" value="1">
+                            <input type="hidden" name="coupon_type_id" value="8">
+                            <input type="hidden" name="jianzeng_type" id="jianzeng_type72956" value="1">
+                            <input type="hidden" name="discount_money" id="discount_money72956" value="2000">
+                        </div>
+                        <div class="discount-detail-item">
+                            <div class="discount-detail-checkbox">
+                                <span><input type="radio" class="input_check" id="discountcard72956" name="coupon" attr_coupon_id="72956" value="63"><label for="discountcard72956"></label></span>
+                            </div>
+                            <div class="discount-detail-info">
+                                <div style="line-height:1.7em;font-size:1em;color:#F08200;font-weight: bold;" class="discount72956">¥20元</div>
+                                <div style="line-height:1rem;">
+                                    <span class="rule_name63">满158可用(适用范围：箱:整箱5斤，净果4.6斤)</span>
+                                </div>
+                                <div style="float:right;height:1rem;margin-right:0.5rem;font-size:0.5rem;color:#AFAFAF;">有效期：2017-05-12 ~ 2017-05-15</div>
+                            </div>
+                            <input type="hidden" name="coupon_type" value="1">
+                            <input type="hidden" name="coupon_type_id" value="8">
+                            <input type="hidden" name="jianzeng_type" id="jianzeng_type72956" value="1">
+                            <input type="hidden" name="discount_money" id="discount_money72956" value="2000">
+                        </div>
+                        <div class="discount-detail-item">
+                            <div class="discount-detail-checkbox">
+                                <span><input type="radio" class="input_check" id="discountcard72956" name="coupon" attr_coupon_id="72956" value="63"><label for="discountcard72956"></label></span>
+                            </div>
+                            <div class="discount-detail-info">
+                                <div style="line-height:1.7em;font-size:1em;color:#F08200;font-weight: bold;" class="discount72956">¥20元</div>
+                                <div style="line-height:1rem;">
+                                    <span class="rule_name63">满158可用(适用范围：箱:整箱5斤，净果4.6斤)</span>
+                                </div>
+                                <div style="float:right;height:1rem;margin-right:0.5rem;font-size:0.5rem;color:#AFAFAF;">有效期：2017-05-12 ~ 2017-05-15</div>
+                            </div>
+                            <input type="hidden" name="coupon_type" value="1">
+                            <input type="hidden" name="coupon_type_id" value="8">
+                            <input type="hidden" name="jianzeng_type" id="jianzeng_type72956" value="1">
+                            <input type="hidden" name="discount_money" id="discount_money72956" value="2000">
+                        </div>
+                        <div class="discount-detail-item">
+                            <div class="discount-detail-checkbox">
+                                <span><input type="radio" class="input_check" id="discountcard72956" name="coupon" attr_coupon_id="72956" value="63"><label for="discountcard72956"></label></span>
+                            </div>
+                            <div class="discount-detail-info">
+                                <div style="line-height:1.7em;font-size:1em;color:#F08200;font-weight: bold;" class="discount72956">¥20元</div>
+                                <div style="line-height:1rem;">
+                                    <span class="rule_name63">满158可用(适用范围：箱:整箱5斤，净果4.6斤)</span>
+                                </div>
+                                <div style="float:right;height:1rem;margin-right:0.5rem;font-size:0.5rem;color:#AFAFAF;">有效期：2017-05-12 ~ 2017-05-15</div>
+                            </div>
+                            <input type="hidden" name="coupon_type" value="1">
+                            <input type="hidden" name="coupon_type_id" value="8">
+                            <input type="hidden" name="jianzeng_type" id="jianzeng_type72956" value="1">
+                            <input type="hidden" name="discount_money" id="discount_money72956" value="2000">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--发票-->
+        <div id="invoice" class="weui-popup-container popup-bottom">
+            <div class="weui-popup-overlay"></div>
+            <div class="weui-popup-modal">
+                <div class="toolbar">
+                    <div class="toolbar-inner">
+                        <a href="javascript:;" onclick="invoice_confirm()" class="picker-button-2">确定</a>
+                        <a href="javascript:;" class="picker-button-1 close_popup_invoice">取消</a>
+                    </div>
+                </div>
+                <!--发票类型-->
+                <div class="modal-content invoice_body">
+                    <div class="invoice_type">
+                        <div class="invoice_type1">
+                            <label>发票类型</label>
+                        </div>
+                        <div class="invoice_type2" id="a4">
+                            <div id="" receitp_type="1" class="hu check" onclick="change_invoice(this)">
+                                <span>普通发票</span>
+                            </div>
+                        </div>
+                        <input type="hidden" name="receitp_type" value="1">
+                    </div>
+                    <!--发票抬头-->
+                    <div class="invoice_taitou">
+                        <div class="invoice_taitou1">
+                            <label>发票抬头</label>
+                        </div>
+                        <div class="invoice_taitou2">
+                            <div class="invoice_taitou2_details invoice_choose">
+                                <input type="radio" id="radio-1" class="regular-radio" name="receitp_cust" value="1" checked="">
+                                <label for="radio-1"></label>&nbsp;个人
+                            </div>
+                            <div class="invoice_taitou2_details invoice_choose">
+                                <input type="radio" id="radio-2" class="regular-radio" name="receitp_cust" value="2">
+                                <label for="radio-2"></label>&nbsp;公司
+                            </div>
+                        </div>
+                        <div class="invoice_taitou3">
+                            <div class="invoice_company">
+                                <input class="invoice_company_details" name="invoice_company_details" type="text" placeholder="请输入公司名称" disabled="disabled">
+                            </div>
+                        </div>
+                    </div>
+                    <!--发票内容-->
+                    <div class="invoice_details">
+                        <div class="invoice_details1">
+                            <label>发票内容</label>
+                        </div>
+                        <div class="invoice_details2">
+                            <div class=" invoice_choose">
+                                <input type="radio" class="regular-radio" name="receitp_content" id="radio-13" value="13" checked="">
+                                <label for="radio-13"></label>&nbsp;明细
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="hidden" name="is_invoice" class="is_invoice" value="">
+                </div>
+            </div>
+        </div>
+        <input type="hidden" name="__hash__" value="0551461b4c17cdd05f60c8d75ba45a21_ab7e190a917bde54a7f1674bd52031cb">
+    </form>
+    <script src="./诱诱美鲜_files/jquery-2.1.4.js.下载"></script>
+    <!-- <script src="//cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>-->
+    <!--<script src="/Public/Shop/js/jquery-weui082.js"></script>-->
+    <script src="./诱诱美鲜_files/jquery-weui080.js.下载"></script>
+    <!-- 如果使用了某些拓展插件还需要额外的JS -->
+    <script type="text/javascript" charset="utf-8" src="./诱诱美鲜_files/fastclick.js.下载"></script>
+    <script type="text/javascript" charset="utf-8" src="./诱诱美鲜_files/common.js.下载"></script>
+    <script type="text/javascript" src="iscroll.js"></script>
+    <script>
+    $(function() {
+        $("#time3").picker({
+            title: "请选择送货时间",
+            cols: [{
+                textAlign: 'center',
+                values: getDeliveryDay()
+            }, {
+                textAlign: 'center',
+                values: ['上午', '下午']
+            }],
+        });
+        $("#time3").picker("setValue", [getDeliveryDay()[0], "下午"]);
+        //是否打印价格
+        $('.i_price').click(function() {
+            var is_print_price = $('.i_price:checked').val();
+            if (is_print_price == 'on') {
+                $("#is_print_price").val(1);
+            } else {
+                $("#is_print_price").val(2);
+            }
+        });
+        //是否开发票
+        $('.i_invoice').click(function() {
+            var is_print_invoice = $('.i_invoice:checked').val();
+            if (is_print_invoice == 'on') {
+                $(".is_invoice").val(1);
+                addevent();
+                $("#invoice").popup();
+            } else {
+                $(".is_invoice").val(0);
+            }
+        });
+        //发票抬头设置invoice_company_details
+        $("input[name='receitp_cust']").change(function() {
+            $(".invoice_company_details").attr('disabled', true);
+            if ($(this).val() == 2) {
+                $(".invoice_company_details").attr('disabled', false);
+            }
+        });
+        //关闭优惠券
+        $('.close_popup_discountCard').click(function() {
+            delevent();
+            $.closePopup();
+        });
+
+        //关闭发票
+        $('.close_popup_invoice').click(function() {
+            delevent();
+            $.closePopup();
+        });
+    });
+
+    //开启发票
+    function invoice_confirm() {
+        if ($("input[name='receitp_cust']:checked").val() == 2) {
+            var invoice_company_details = $(".invoice_company_details").val();
+            if (!invoice_company_details || invoice_company_details == '') {
+                $.alert('请填写公司抬头');
+                return false;
+            } else {
+                delevent();
+                $.closePopup();
+            }
+        } else {
+            delevent();
+            $.closePopup();
+        }
+
+
+    }
+
+    //关闭发票
+    function cance_invoice() {
+        $('.i_invoice').attr('checked', false);
+        delevent();
+        $.closePopup();
+    }
+
+    //选则收获地址
+    function select_address() {
+        var url = "/Shop/UserCenter/userAdressList.html";
+        setCookie("is_print_price", $("#is_print_price").val(), null);
+        setCookie("is_invoice", $(".is_invoice").val(), null);
+        if ($(".is_invoice").val()) {
+            setCookie("invoice_company_details", $(".invoice_company_details").val(), null);
+            setCookie("receitp_cust", $("input[name='receitp_cust']:checked").val(), null);
+            setCookie("receitp_type", $("input[name='receitp_type']").val(), null);
+            setCookie("receitp_content", $("input[name='receitp_content']:checked").val(), null);
+        }
+        location.href = url;
+    }
+
+    function openDaySelect() {
+        $("#time3").picker("open");
+    }
+
+    function getDeliveryDay() {
+        var show_day = new Array('星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六');
+        var dayArr = [];
+        for (var i = 0; i < 5; i++) {
+            var time = new Date();
+            time.setDate(time.getDate() + i);
+            var year = time.getYear();
+            var month = time.getMonth() + 1;
+            var date = time.getDate();
+            var day = time.getDay();
+            var dayTime = month + '月' + date + '日' + '(' + show_day[day] + ')';
+            dayArr[i] = dayTime;
+        }
+        return dayArr;
+    }
+
+    function editAddress() {
+        $("#userAddress").popup();
+    }
+
+    function openDiscountCode() {
+        $.prompt("", "输入优惠码/红包口令", function(text) {
+            alert(text);
+        }, function() {
+
+        });
+    }
+
+    //发票类型选中
+    function change_invoice(_obj) {
+        $('.hu').removeClass('check');
+        $(_obj).addClass('check');
+        var receitp_type = $(_obj).attr('receitp_type');
+        $("input[name='receitp_type']").val(receitp_type);
+    }
+
+    function openDiscountCard() {
+        // addevent();
+        // stopmove();
+        loaded();
+        $("#discountCard").popup();
+    }
+
+    function commitAddressClicked() {
+        $.closePopup();
+    }
+
+    function selectDiscountCard() {
+        var cur_coupon = $("input[name=coupon]:checked").attr('attr_coupon_id');
+        //选择了优惠券
+        if (typeof(cur_coupon) != 'undefined') {
+            var discount = $('.discount' + cur_coupon).text(); //优惠的内容
+            var type = $('#jianzeng_type' + cur_coupon).val();
+            if (type == 1) {
+                //满减
+                var discount_money = $('#discount_money' + cur_coupon).val();
+                var discount_money_show = Math.round(discount_money) / 100;
+                var pay_amount = Math.round((parseInt('50880') - parseInt(discount_money))) / 100; //实际支付
+                var htm = '实付:¥ <span>' + pay_amount + '</span>元<span style="font-size:0.5rem;">(优惠:¥ ' + discount_money_show + '元)</span>';
+            } else {
+                var htm = '实付:¥ <span>508.80</span>元<span style="font-size:0.5rem;">(优惠:' + discount + ')</span>';
+            }
+            $('.commit-order-text').html(htm);
+        }
+
+        $.closePopup();
+    }
+
+    //提交订单
+    var subtag = 0;
+
+    function commitOrder() {
+        if (subtag == 1) {
+            $.toast("不能重复提交订单", "text");
+            return false;
+        }
+        $.ajax({
+            url: "/Shop/Order/commitOrder.html",
+            data: $("#commit_order_form").serialize(),
+            type: 'post',
+            cache: false,
+            dataType: 'json',
+            success: function(data) {
+                if (data.status == 0) {
+                    $.alert(data.info);
+                    return false;
+                } else if (data.status == 1) {
+                    subtag = 1;
+                    //去支付
+                    var url = '/Shop/Pay/payHtml?type=1&type_id=' + data.data.type_id;
+                    location.href = url;
+                } else if (res.status == -1) {
+                    location.href = "/Shop/Site/login.html";
+                }
+            },
+            error: function() {
+                $.alert('网络连接异常，请检查网络情况！');
+            }
+        });
+    }
+
+
+    // 阻止默认事件 绑定
+    function addevent() {
+        $('body').bind('touchmove', function(event) {
+            event.preventDefalut();
+        }, false)
+    }
+
+    //移除绑定
+    function delevent() {
+        $('body').unbind('touchmove');
+    }
+
+
+
+// 弹层滚动 初始化滚动事件
+    var myScroll;
+    $(function() {
+        myScroll = new IScroll('#gundong');
+
+    })
+    //当动作触发时候，需要重新初始化iscroll事件 
+    function loaded() {
+        setTimeout(function() {
+            myScroll.refresh();
+        }, 0);
+        stopmove();
+    }
+    //弹框开启后，禁止蒙版下的内容滚动
+    function stopmove(){
+        $('.weui-popup-overlay').bind('touchmove',function(event){
+            event.preventDefalut();
+        },false);
+    }
+
+    </script>
+</body>
+
+</html>

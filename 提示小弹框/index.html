@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>提示小弹框</title>
+    <link rel="stylesheet" href="">
+    <script src="js/jquery-2.1.4.js"></script>
+    <style>
+ .Payment-failed {
+        position: fixed;
+        left: 50%;
+        margin-left: -1rem;
+        min-width: 1.4rem;
+        z-index: 2000;
+        background: #000;
+        width: auto;
+        opacity: .7;
+        text-align: center;
+        border-radius: 40px;
+        display: none;
+        padding-left: 0.1rem;
+        padding-right: 0.1rem;
+    }
+    
+    .Payment-failed span {
+        color: #fff;
+        line-height: 1rem;
+       margin-left: 3px;
+       margin-right: 3px;
+    }
+    </style>
+</head>
+
+<body>
+    <button>点我</button>
+    <!-- 支付失败的弹框 -->
+    <div class="Payment-failed">
+    <span></span>
+</div>
+    <script>
+    	// 调用
+    	$('button').click(function(){
+    		$.toast('支付失败')
+    	})
+
+
+	    $.toast = function(text) {
+	        $('.Payment-failed').css('display', 'block');
+	        $('.Payment-failed').find('span').html(text);
+	        setTimeout(function() {
+	            $('.Payment-failed').css('display', 'none');
+	        }, 20000);
+
+	    }
+
+       /* $.toast = function(text) {
+             $('.Payment-failed').css('display', 'block');
+             $('.Payment-failed').find('span').html(text);
+             var width = $('.Payment-failed').width();
+             var height = $(window).height();
+             var width = parseFloat(-(width/100) )+ 'rem';
+             var height = parseFloat(-(height/100) )+ 'rem';
+            
+             $('.Payment-failed').css('margin-left',width);
+             $('.Payment-failed').css('margin-top',height);
+
+             setTimeout("$('.Payment-failed').css('display', 'none')",2000);
+
+
+        }*/
+    </script>
+</body>
+
+</html>

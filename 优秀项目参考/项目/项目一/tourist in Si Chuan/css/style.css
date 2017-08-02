@@ -1,0 +1,329 @@
+@charset "utf-8";
+:root{
+	font-size: 62.5%;
+}
+body{
+	background: #f6f6f6;
+}
+/* nav部分 */
+.public-header{
+	width: 100%;
+	max-width: 1920px;
+	height: auto;
+	position: relative;
+}
+.public-header .public-nav{
+	width: 100%;
+	height: auto;
+	background: rgba(209,223,244,0.8);
+	position: absolute;
+}
+.public-header .public-nav .w1200 .logo{
+	float: left;
+	margin-left: 4px;
+	margin-top: 9px;
+	margin-bottom: 11px;
+}
+.public-header .public-nav .w1200 .logo span{
+	line-height: 45px;
+	font-size: 18px;
+	color: #ffffff;
+	font-weight: bold;
+	margin-left: 8px;
+}
+.public-header .public-nav .w1200 .nav-ul ul{
+	float: right;
+}
+.public-header .public-nav .w1200 .nav-ul ul>li{
+	float: left;
+	width: 141px;
+	font-size: 17px;
+	height: 84px;
+	line-height: 102px;
+	text-align: center;
+}
+.public-header .public-nav .w1200 .nav-ul ul>li>a{
+	color: #000000;
+}
+.public-header .public-nav .w1200 .nav-ul>ul li:hover .nav-child li{
+	display: block;
+}
+.public-header .public-nav .w1200 .nav-ul>ul>li:hover{
+	background-image: linear-gradient(to bottom,#165269,#30b6e9);
+
+}
+.nav-child li:hover{
+	background:#1c6a87;
+}
+/* .public-header .public-nav .w1200 .nav-ul .nav-goal .tubiao{
+	background: url(../images/ttt.png) no-repeat;
+	
+} */
+/* 右侧导航栏选项 */
+.public-header .public-nav .w1200 .nav-ul .nav-child{
+	width: 141px;
+	background: #30b6e9;
+	position: absolute;
+	top: 84px;
+}
+.public-header .public-nav .w1200 .nav-ul .nav-child li{
+	height: 34px;
+	line-height: 34px;
+	font-size: 17px;
+	
+	display: none;
+}
+.fff{
+	position: relative;
+}
+.xiabiao2{
+position: absolute;
+top: -1px;
+right: -24px;
+}
+/* banner部分 */
+.public-banner{
+	max-width: 1920px;
+   width: 100%;
+   overflow: hidden;
+
+}
+
+.public-header .public-banner h2{
+	position: absolute;
+	top:32%;
+	left:44%;
+}
+.public-header .public-banner .text p{
+	position: absolute;
+	top: 40%;
+	left: 37%;
+}
+.public-header .public-banner .num{
+	position: absolute;
+	bottom: 17%;
+	left: 40%;
+}
+.public-header .public-banner .num img{
+	margin-right: 24px;
+}
+
+/* 主体部分 */
+.index-content .destination div:first-child{
+	height: 86px;
+	text-align: center;
+}
+.index-content .destination p:nth-of-type(1){
+	font-size: 36px;
+	color: black;
+	font-weight: bold;
+	margin-top: 42px;
+}
+.index-content .destination p:nth-of-type(2){
+	font-size: 19px;
+	color: black;
+	font-weight: bold;
+	margin-top: 17px;
+}
+.index-content .destination .img4{
+	background: #30b6e9;
+	width: 476px;
+	height: 254px;
+	text-align: center;
+}
+.index-content .destination .img4 a{
+	font-size: 53px;
+	color: white;
+	line-height: 254px;
+}
+.index-content .destination .img1{
+	border: 3px solid white;
+	display: inline-block;
+
+	box-shadow: 6px 6px 6px #a7a7a7;
+	margin-top: 0;
+}
+.index-content .destination .img2{
+	display: inline-block;
+	float: right;
+	margin-top: 36px;
+	margin-left: 22px;
+}
+.index-content .destination .img3{
+	display: inline-block;
+	margin-top: 49px;
+	box-shadow: 0px -21px 5px #ffffff;
+}
+.index-content .destination .img4{
+	display: inline-block;
+	float: right;
+	margin-top: -244px;
+	
+}
+
+/* 景点新玩法 */
+.index-content .new_play_text{
+	text-align: center;
+}
+.index-content .new_play_text p:nth-of-type(1){
+	font-size: 36px;
+	color: black;
+	font-weight: bold;
+	margin-top: 42px;
+}
+.index-content .new_play_text p:nth-of-type(2){
+	font-size: 19px;
+	color: black;
+	font-weight: bold;
+	margin-top: 17px;
+}
+.index-content .new_play{
+	display: flex;
+	margin-top: 31px;
+	justify-content: space-around;
+}
+.index-content .new_play img{
+	border: 3px solid white;
+}
+
+
+
+
+
+/* 住宿新体验 */
+.index-content .accommodation_text{
+	text-align: center;
+	height:
+}
+.index-content .accommodation_text p:nth-of-type(1){
+	font-size: 36px;
+	color: black;
+	font-weight: bold;
+	margin-top: 42px;
+}
+.index-content .accommodation_text p:nth-of-type(2){
+	font-size: 19px;
+	color: black;
+	font-weight: bold;
+	margin-top: 17px;
+}
+.index-content .accommodation{
+	
+	display: flex;
+	margin-top: 31px;
+	justify-content: space-around;
+}
+/* 关于我们 */
+.index-content .about_us_text{
+	text-align: center;
+	margin-bottom: 29px;
+}
+.index-content .about_us_text p:nth-of-type(1){
+	font-size: 36px;
+	color: black;
+	font-weight: bold;
+	margin-top: 42px;
+}
+.index-content .about_us_text p:nth-of-type(2){
+	font-size: 19px;
+	color: black;
+	font-weight: bold;
+	margin-top: 17px;
+}
+.index-content .about_us .about_us_right .about_us_top div:first-child{
+	margin-right: 36px;
+	margin-bottom: 36px;
+}
+.index-content .about_us .about_us_right .about_us_buttom{
+	background: #30b6e9;
+	width: 754px;
+	height: 357px;
+	font-size: 22px;
+	color: white;
+
+}
+.index-content .about_us .about_us_right p:nth-of-type(1){
+	line-height: 41px;
+	padding-top: 86px;
+	padding-left: 53px;
+}
+.index-content .about_us .about_us_right p:nth-of-type(2){
+	line-height: 41px;
+	width: 649px;
+	padding-left: 53px;
+	letter-spacing: 2px;
+	text-indent: 4rem;
+}
+.index-content .about_us .about_us_left{
+	float: left;
+	width: 406px;
+}
+.index-content .about_us .about_us_right{
+	float: right;
+}
+.index-content .about_us .about_us_right .about_us_top{
+	display: flex;
+}
+/* 加入我们 */
+.index-content .join_us_text{
+	text-align: center;
+	margin-bottom: 29px;
+}
+.index-content .join_us_text p:nth-of-type(1){
+	font-size: 36px;
+	color: black;
+	font-weight: bold;
+	margin-top: 42px;
+}
+.index-content .about_us_text p:nth-of-type(2){
+	font-size: 19px;
+	color: black;
+	font-weight: bold;
+	margin-top: 17px;
+}
+.index-content .join_us img{
+	width: 100%;
+	overflow: hidden;
+}
+
+.public-footer{
+    width: 100%;
+    /* width>1200px */
+    max-width: 1920px;
+    display: inline-block;
+    margin: 0 auto;
+    overflow: hidden;
+
+}
+.public-footer img{
+	width: 100%;
+}
+
+/* 精选目的地 */
+.index-content .destination img{
+	transition: transform 2s ,box-shadow 5s;
+}
+
+.index-content .destination img:hover{
+	transform: scale(1.1);
+
+	
+	box-shadow: 5px 5px 12px black;
+}
+/* 景点新玩法特效 */
+.index-content .new_play img{
+	transition: transform 2s ,box-shadow 5s;
+}
+
+.index-content .new_play img:hover{
+	transform: scale(1.2);
+	transform: skew(5deg,5deg);
+	
+	box-shadow: -3px 3px 12px black;
+}
+/* 住宿新体验特效 */
+
+
+
+
+

@@ -1,0 +1,62 @@
+ //搜索框透明度变更+返回顶部按钮显示隐藏
+        $(".weui_tab_bd").bind("scroll", function() {
+            var sTop = $(".weui_tab_bd").scrollTop();
+            console.log(sTop);
+            var sTop = parseInt(sTop);
+            var opt = sTop * 0.005;
+            var rgb = "rgba(255,255,255,";
+            if (opt > 0.5) {
+                $(".weui_search_text").css({
+                    "background-color": "rgba(0,0,0,0.1)"
+                });
+                $(".weui_search_text").css({
+                    "color": "#AFAFAF"
+                });
+                $(".city-change-toggle").css({
+                    "color": "#000"
+                });
+                $(".Nav-search-bar").css({
+                    "box-shadow": "0 1px 3px #AFAFAF"
+                });
+                $(".back-top-btn").fadeIn();
+            } else {
+                $(".weui_search_text").css({
+                    "background-color": "rgba(255,255,255,0.8)"
+                });
+                $(".weui_search_text").css({
+                    "color": "#9b9b9b"
+                });
+                $(".city-change-toggle").css({
+                    "color": "#FFF"
+                });
+                $(".Nav-search-bar").css({
+                    "box-shadow": "0 0px 0px #AFAFAF"
+                });
+                $(".back-top-btn").fadeOut();
+            }
+            if (opt > 0.8) {
+                opt = 0.8;
+            } else if (opt < 0.1) {
+                rgb = "rgba(0,0,0,";
+            }
+            var opti = rgb + opt + ")";
+            $(".Nav-search-bar").css({
+                "background-color": opti
+            });
+
+            //            var nTop = parseInt($(".NAV-goods-grp-swiper-container").offset().top);
+            //            var searchBarHeight = parseInt($(".Nav-search-bar").height());
+            //
+            //            if(nTop < searchBarHeight){
+            //                $(".Nav-grp-bar").css("z-index", 9);
+            //            }else{
+            //                $(".Nav-grp-bar").css("z-index", -1);
+            //            }
+        });
+
+        //返回顶部按钮事件
+        $('.back-top-btn').click(function() {
+            $(".weui_tab_bd").animate({
+                scrollTop: 0
+            }, 400);
+        });

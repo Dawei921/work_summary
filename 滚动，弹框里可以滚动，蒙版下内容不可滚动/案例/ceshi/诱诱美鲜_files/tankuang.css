@@ -1,0 +1,104 @@
+body {
+		font-family:"Microsoft YaHei" !important;
+	}
+	.p_buttom {
+		position:relative;
+		margin:3em 4em 0 4em;
+		width:60%;
+	}
+	input {
+		outline: none;
+	}
+	.text {
+		font-size:.75em;
+		width:36%;
+		float:left;
+		text-align:left;
+	}
+	.pay_key_details {
+		height:2.5em;
+		width:100%;
+		border:1px solid #ddd;
+		font-size:0.75em;
+		-webkit-border-radius:3px;
+	}
+	.pay_key {
+		height:8em;
+		width:90%;
+		margin:auto;
+		line-height:2.8em;
+	}
+	.toolbar .picker-button-1{
+    	position: absolute;
+    	left: 0;
+    	box-sizing: border-box;
+    	height: 2.2em;
+    	line-height: 2.2em;
+   	 	color: #f08200;
+   		z-index: 1;
+   	 	padding: 0 .5em;
+		font-size:.85em;
+	}
+	.toolbar .picker-button{
+		font-size:.95em;
+	}
+	.payment_payment_body{
+		position:relative;
+		width:94%;
+		margin:auto;
+	}
+	.payment_payment{
+		width:100%;
+		height:3em;
+		position:relative;
+		text-align:center;
+		float:left;
+		font-size:.95em;
+		margin-top:.5em;
+	}
+	.payment_payment_details1 {	
+		float:left;
+		text-align:center;
+	}
+	.payment_payment_details2 {
+		float:right;
+	}
+	.toolbar .picker-button-2 {
+    position: absolute;
+    right: 0;
+    box-sizing: border-box;
+    height: 2.2em;
+    line-height: 2.2em;
+    color: #f08200;
+    z-index: 1;
+    padding: 0 .5em;
+    font-size: .85em;
+}
+.invoice_type{
+	border-bottom:3px solid #f2f2f2;
+	background-color:#f6f6f6;
+	width:100%;
+	float:left;	
+}
+.invoice_type1{
+	float:left;	
+	width:100%;
+}
+.invoice_type2{
+	float:left;
+	width:100%;
+}
+.hu {
+	margin-left: 1em;
+	text-align:center;
+	float:left;
+	width: 5em;
+	background-color: #fff;
+	border: #999 1px solid;
+	-webkit-border-radius:3px; 
+	color:#999;
+	}
+.check {
+	border: #f08200 1px solid;
+	color:#f08200;
+}

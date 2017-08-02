@@ -1,0 +1,172 @@
+.p_buttom {
+	position:relative;
+	margin:3em 4em 0 4em;
+	width:60%;
+}
+input {
+	outline: none;
+}
+
+.toolbar .picker-button-1{
+	position: absolute;
+	left: 0;
+	box-sizing: border-box;
+	height: 2.2em;
+	line-height: 2.2em;
+	color: #f08200;
+	z-index: 1;
+	padding: 0 .5em;
+	font-size:.85em;
+}
+.toolbar .picker-button-2 {
+	position: absolute;
+	right: 0;
+	box-sizing: border-box;
+	height: 2.2em;
+	line-height: 2.2em;
+	color: #f08200;
+	z-index: 1;
+	padding: 0 .5em;
+	font-size: .85em;
+}
+.weui-popup__modal { 
+    background: #fff!important;
+}
+.toolbar {
+    background: #fff!important;
+}
+.invoice_body {
+	width:94%;
+	margin:auto;
+}
+.invoice_type{
+	width:100%;
+	float:left;	
+}
+.invoice_type1{
+	background-color:#fff;	
+	width:100%;
+	float:left;
+	color:#000;
+	font-size:.95em;
+}
+.invoice_type2{
+	float:left;
+	width:100%;
+	margin:.3em auto;
+}
+.hu {
+	margin-right: 3em;
+	text-align:center;
+	float:left;
+	width: 8em;
+	font-size:.75em;
+	background-color: #fff;
+	border: #999 1px solid;
+	-webkit-border-radius:3px; 
+	color:#999;
+	}
+.check {
+	border: #f08200  1px solid;
+	color:#f08200;
+}
+.invoice_taitou {
+	position:relative;
+	width:100%;
+	height:auto;	
+}
+.invoice_taitou1 {
+	font-size:.9m;
+	width:100%;
+	float:left;
+	color:#333;
+	margin-bottom:.5em;
+}
+.invoice_taitou2 {
+	font-size:.75em;
+	width:100%;
+	float:left;
+	color:#666;
+	margin-bottom:.5em;
+}
+.invoice_taitou2_details {
+	width:auto;
+	margin-right:.5em;
+	float:left;
+	padding-right:.5em;
+	color:#666;
+}
+.invoice_taitou3 {
+	width:100%;
+	float:left;
+}
+.invoice_company_details {
+	width:97%;
+	padding:.2em;
+	font-size:.75em;
+	color:#333;
+	border: #999 1px solid;
+	-webkit-border-radius:3px; 
+}
+
+.invoice_details {
+	position:relative;
+	width:100%;
+	height:auto;	
+}
+.invoice_details1 {
+	font-size:.9m;
+	width:100%;
+	float:left;
+	color:#333;
+	margin-bottom:.5em;
+}
+.invoice_details2 {
+	font-size:.75em;
+	width:100%;
+	float:left;
+	color:#666;
+	margin-bottom:.5em;
+}	
+
+/*按钮标签*/
+label {
+	display: inline;
+	top:5px;
+}
+.regular-radio {
+	display: none;
+}
+.regular-radio + label {
+	-webkit-appearance: none;
+	background-color: #fafafa;
+	border: 1px solid #cacece;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+	padding: 7px;
+	border-radius: 50px;
+	display: inline-block;
+	position: relative;
+}
+.regular-radio:checked + label:after {
+	content: ' ';
+	width: 8px;
+	height: 4px;
+	border-top:2px solid #fff;
+	border-right:2px solid #fff;
+	position: absolute;
+	-webkit-transform:rotate(130deg);
+	-webkit-border-radius:1px;
+	top: 3px;
+	background: #3c0;
+	left: 2px;
+	font-size: 32px;	
+}
+.regular-radio:checked + label {
+	background-color: #3c0;
+	color: #99a1a7;
+	border: 1px solid #adb8c0;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1), inset 0px 0px 10px rgba(0,0,0,0.1);
+}
+.regular-radio + label:active, .regular-radio:checked + label:active {
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}

@@ -1,0 +1,35 @@
+方法一：
+最优 
+function addevent(){
+	$('body').bind('touchmove',function(event){
+		event.preventDefalut();
+	}，false)
+}
+
+function delevent(){
+	$('body').unbind('touchmove');
+}
+
+
+
+方法二：
+在 touchstart 事件中绑定 touchmove
+在 touchend 中解除 touchmove 绑定即可
+$("#id").on(' touchstart',function(){   
+ $("#id").on('touchmove',function(event) {
+     event.preventDefault();   
+  }, false);
+})
+
+$("#id2").on(' touchend',function(){   
+ $("#id").unbind('touchmove');
+})
+
+
+
+
+方法二：
+oMask.addEventListener('touchmove', function (event) {
+            event.preventDefault();
+},false);
+

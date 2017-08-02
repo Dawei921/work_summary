@@ -1,0 +1,33 @@
+.write p{
+	position: relative;
+}
+.errorbtn{
+	background: url(../images/icon21_1.png) no-repeat right;
+	border:1px solid orange;
+	outline: 1px solid orange;
+}
+.error{
+	display: inline-block;
+	width: 193px;
+	height: 25px;
+	line-height: 25px;
+	position: absolute;
+	top: 23px;
+	margin-left: 16px;
+	background: #fff6cf;
+	border: 2px solid #ffbb27;
+	padding-left: 26px;
+	background: url(../images/icon21.png) no-repeat 6px 6px;
+}
+.pass{
+	padding-left: 26px;
+	width:193px;
+	height: 14px;
+	margin-left: 16px;
+	display: inline-block;
+	background: url(../images/icon35.png) no-repeat;
+}
+.stop{
+	background: #ccc;
+
+}

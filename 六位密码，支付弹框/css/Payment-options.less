@@ -1,0 +1,378 @@
+body {
+    background: #f2f4f8;
+}
+
+header {
+    height: 0.80rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    background: #fff;
+    position: relative;
+    .head-c-left {
+        line-height: 0.80rem;
+        a {
+            // display: inline-block;
+            margin-left: 0.3rem;
+            img {
+                width: 0.18rem;
+                height: 0.34rem;
+                vertical-align: middle;
+            }
+        }
+    }
+    h1 {
+        max-width: 50%;
+        font-size: 0.36rem;
+        height: 0.88rem;
+        color: #333333;
+        font-weight: 500;
+        white-space: nowrap;
+        line-height: 0.88rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        position: absolute;
+        left: 50%;
+        margin-left: -0.88rem;
+    }
+}
+
+//待支付金额
+.needPay {
+    border-top: 0.01rem solid #aaaaaa;
+    height: 2rem;
+    text-align: center;
+    background: white;
+    h1 {
+        font-size: 0.3rem;
+        color: #999999;
+        height: 0.9rem;
+        line-height: 0.9rem;
+    }
+    h2 {
+        font-size: 0.6rem;
+        color: #f08200;
+        height: 0.9rem;
+        line-height: 0.9rem;
+        span {
+            font-size: 0.6rem;
+        }
+    }
+}
+
+// 选择支付方式
+.howPay {
+    h2 {
+        font-size: 0.28rem;
+        color: #666666;
+        margin-left: 0.3rem;
+        margin-top: 0.3rem;
+        height: 0.76rem;
+    }
+    .Balance-payment {
+        background: white;
+        .payment {
+            margin-left: 0.3rem;
+            height: 0.96rem;
+            line-height: 0.96rem;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            border-bottom: 2px solid #eeeeee;
+            position: relative;
+            div:first-child {
+                margin-right: 0.2rem;
+                img {
+                    vertical-align: middle;
+                }
+            }
+            .pay-content {
+                color: #333333;
+                font-size: 0.3rem;
+            }
+            .paySure {
+                position: absolute;
+                right: 0.3rem;
+                img {
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+}
+
+// 底部确认支付
+.payOk {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    width: 7.5rem;
+    height: 1rem;
+    background: #f08200;
+    color: #ffffff;
+    font-size: 0.32rem;
+    text-align: center;
+    line-height: 1rem;
+}
+
+//余额不足弹框
+.mask {
+    opacity: 1;
+    visibility: visible;
+    transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.mask {
+    display: none;
+}
+
+.dialog1,
+.dialog2,
+.dialog3 {
+    display: none;
+}
+
+.dialog {
+    visibility: visible;
+    transform: scale(1) translate(-50%, -50%);
+    -moz-transform: scale(1) translate(-50%, -50%);
+    -webkit-transform: scale(1) translate(-50%, -50%);
+    -o-transform: scale(1) translate(-50%, -50%);
+    transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    margin: 0 auto;
+    top: 45%;
+    z-index: 2;
+    position: fixed;
+    width: 5rem;
+    left: 50%;
+    background-color: #ffffff;
+    text-align: center;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.dialog1 {
+    z-index: 3;
+}
+
+.dialog__hd {
+    height: 0.82rem;
+}
+
+.dialog__title {
+    font-weight: 500;
+    font-size: 0.34rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.2rem;
+}
+
+.dialog__bd {
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    font-size: 0.28rem;
+    color: #676767;
+}
+
+.dialog__ft {
+    position: relative;
+    line-height: 48px;
+    font-size: 18px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    border-top: 0.01rem solid #e3e0e0;
+}
+
+.dialog__btn_miss {
+    color: #5f646e;
+    display: block;
+    box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-box-flex: 1;
+    -o-box-flex: 1;
+    flex: 1;
+    -moz-flex: 1;
+    -webkit-flex: 1;
+    -o-flex: 1;
+    position: relative;
+    cursor: auto;
+    text-decoration: none;
+    border-right: 0.01rem solid #e3e0e0;
+}
+
+.dialog__btn_sure {
+    color: #f08200;
+    display: block;
+    box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-box-flex: 1;
+    -o-box-flex: 1;
+    flex: 1;
+    -moz-flex: 1;
+    -webkit-flex: 1;
+    -o-flex: 1;
+    position: relative;
+    cursor: auto;
+    text-decoration: none;
+    border-left: 0.01rem solid #e3e0e0;
+}
+
+.dialog2 {
+    width: 5.7rem;
+}
+
+.dialog__hd2 {
+    position: relative;
+    height: 1rem;
+    p {
+        font-size: 0.34rem;
+        padding: 0;
+        line-height: 1rem;
+    }
+    img {
+        width: 0.24rem;
+        position: absolute;
+        top: 50%;
+        margin-top: -0.12rem;
+        left: 0.3rem;
+        vertical-align: middle;
+    }
+}
+
+.dialog__bd2 {
+    border-top: 0.01rem solid #f18200;
+    margin: 0;
+    height: 1.44rem;
+    line-height: 1.44rem;
+    font-size: 0.44rem;
+    font-weight: bold;
+    color: #333333;
+}
+
+.dialog__ft2 {
+    /* .ipt-box-nick {
+        width: 4.94rem !important;
+        margin: 0 auto !important;
+        height: 0.84rem !important;
+        line-height: 0.84rem !important;
+        position: relative !important;
+        .ipt-real-nick {
+            position: absolute !important;
+            top: 0 !important;
+            left: 0 !important;
+            width: 100%;
+            height: 0.84rem !important;
+            line-height: 0.84rem !important;
+            opacity: 0 !important;
+            z-index: 3 !important;
+        }
+        .ipts-box-nick {
+            position: absolute !important;
+            top: 0 !important;
+            left: 0 !important;
+            z-index: 1 !important;
+            height: 0.84rem !important;
+            line-height: 0.84rem !important;
+            overflow: hidden;
+            .ipt-fake-box {
+                height: 0.84rem !important;
+                line-height: 0.84rem !important;
+                display: flex !important;
+                justify-content: space-between !important;
+                input {
+                    
+                     width: 0.8rem !important;
+                    height: 40px !important;
+                    height: 0.82rem !important;
+                    border: 1px solid #D7D7D7 !important;
+                    color: black !important;
+                    font-weight: bold !important;
+                    // font-size: 2rem !important;
+                    text-align: center !important;
+                    padding: 0 !important; 
+                   //  width:0.8rem;
+                   //  height:0.4rem;
+                   // border:1px solid #D7D7D7;
+                   //  color:black;
+                   //  text-align: center;
+                   //  padding:0;
+                  
+                }
+            }
+        }
+    } 
+     */
+    width: 4.78rem;
+    margin: 0 auto;
+    .ipt-box-nick {
+        height: 0.84rem;
+        position: relative;
+        .ipt-real-nick {
+            border: 1px solid red;
+            height: 0.9rem;
+            position: absolute;
+            z-index: 11;
+            left:-100%;
+            width:4.78rem;
+            height:0.8rem;
+            opacity: 0;
+        }
+        .moni{
+            border: 1px solid red;
+            height: 0.9rem;
+            position: absolute;
+            z-index: 11;
+            left:0;
+            width:4.78rem;
+            height:0.8rem;
+            opacity: 0;
+        }
+        .ipts-box-nick {    //下面的input
+            height: 0.8rem;
+            border: 1px solid #D7D7D7;
+            position: absolute;
+            left:0;
+            z-index: 5;
+            .ipt-fake-box {
+                input {
+                    text-align: center;
+                    float: left;
+                    border-right: 1px solid #D7D7D7;
+                    width: 0.77rem;
+                    border-radius: 0px;
+                    font-size:0.7rem;
+                }
+                input:last-child {
+                    border-right: none;
+                }
+            }
+        }
+    }
+    .setPassword {
+        height: 0.92rem;
+        width: 4.92rem;
+        margin: 0 auto;
+        position: relative;
+        a {
+            position: absolute;
+            line-height: 0.92rem;
+            right: 0;
+        }
+    }
+}
